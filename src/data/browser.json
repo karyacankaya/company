@@ -1,0 +1,718 @@
+{
+  "_aciklama": "Tarayıcı uygulamasının içeriği. 'history': geçmiş kayıtları (kind: 'search' = arama, 'page' = ziyaret edilen sayfa). 'pageId' tıklanınca açılacak önbellek sayfasıdır. 'pages' içindeki her sayfa 'blocks' listesinden çizilir: p (paragraf), heading, fields (etiket/değer), results (arama sonuçları), notice (uyarı kutusu; tone: info | warn | error). 'acrostic': true olan aramaların baş harfi vurgulanır (E-posta parolası).",
+  "appName": "Gezgin",
+  "history": [
+    {
+      "id": "h1",
+      "day": "2026-09-25",
+      "time": "06:12",
+      "kind": "page",
+      "title": "Biletiniz hazır — Otobüsçü",
+      "url": "otobuscu.com/bilet/onay",
+      "pageId": "bilet"
+    },
+    {
+      "id": "h2",
+      "day": "2026-09-25",
+      "time": "05:58",
+      "kind": "search",
+      "title": "kedi otobüse alınır mı",
+      "url": "arayici.com/ara?q=kedi+otobüse+alınır+mı",
+      "pageId": "s-kedi"
+    },
+    {
+      "id": "h3",
+      "day": "2026-09-24",
+      "time": "23:44",
+      "kind": "page",
+      "title": "Rüzgârgülü Pansiyon — Uzun süreli kiralık",
+      "url": "ruzgargulu-pansiyon.com",
+      "pageId": "pansiyon"
+    },
+    {
+      "id": "h4",
+      "day": "2026-09-24",
+      "time": "23:41",
+      "kind": "search",
+      "title": "Rüzgârlı bir adada kiralık oda",
+      "url": "arayici.com/ara?q=rüzgârlı+bir+adada+kiralık+oda",
+      "pageId": "s-ada",
+      "acrostic": true
+    },
+    {
+      "id": "h5",
+      "day": "2026-09-24",
+      "time": "23:33",
+      "kind": "page",
+      "title": "MDM profili nasıl kaldırılır? — Pusula Topluluk",
+      "url": "topluluk.pusula-os.net/konu/8812",
+      "pageId": "mdm"
+    },
+    {
+      "id": "h6",
+      "day": "2026-09-24",
+      "time": "23:31",
+      "kind": "search",
+      "title": "Uzak erişim nasıl engellenir",
+      "url": "arayici.com/ara?q=uzak+erişim+nasıl+engellenir",
+      "pageId": "s-uzak",
+      "acrostic": true
+    },
+    {
+      "id": "h7",
+      "day": "2026-09-24",
+      "time": "23:24",
+      "kind": "search",
+      "title": "Muhbirler yasal olarak korunuyor mu",
+      "url": "arayici.com/ara?q=muhbirler+yasal+olarak+korunuyor+mu",
+      "pageId": "s-muhbir",
+      "acrostic": true
+    },
+    {
+      "id": "h8",
+      "day": "2026-09-24",
+      "time": "23:16",
+      "kind": "page",
+      "title": "Kaynağını koruyan gazetecilik — Açık Kayıt",
+      "url": "acikkayit.com.tr/yazi/kaynak-guvenligi",
+      "pageId": "acikkayit"
+    },
+    {
+      "id": "h9",
+      "day": "2026-09-24",
+      "time": "23:15",
+      "kind": "search",
+      "title": "Gizli kaynak olarak gazeteciyle konuşmak",
+      "url": "arayici.com/ara?q=gizli+kaynak+gazeteci",
+      "pageId": "s-gizli",
+      "acrostic": true
+    },
+    {
+      "id": "h10",
+      "day": "2026-09-24",
+      "time": "23:11",
+      "kind": "search",
+      "title": "Avukat ücretsiz danışma hattı",
+      "url": "arayici.com/ara?q=avukat+ücretsiz+danışma+hattı",
+      "pageId": "s-avukat",
+      "acrostic": true
+    },
+    {
+      "id": "h11",
+      "day": "2026-09-24",
+      "time": "23:04",
+      "kind": "page",
+      "title": "Veri ihlali nedir? — Hukuk Köşesi",
+      "url": "hukukkosesi.net/veri-ihlali",
+      "pageId": "hukuk"
+    },
+    {
+      "id": "h12",
+      "day": "2026-09-24",
+      "time": "23:02",
+      "kind": "search",
+      "title": "Yurt dışına müşteri verisi satmak suç mu",
+      "url": "arayici.com/ara?q=yurt+dışına+müşteri+verisi+satmak+suç+mu",
+      "pageId": "s-yurtdisi",
+      "acrostic": true
+    },
+    {
+      "id": "h13",
+      "day": "2026-09-24",
+      "time": "18:05",
+      "kind": "page",
+      "title": "Gönderi oluşturuldu — Kuşkanadı Kargo",
+      "url": "kuskanadi.com/gonderi/TK-2609-4471",
+      "pageId": "kargo"
+    },
+    {
+      "id": "h14",
+      "day": "2026-09-24",
+      "time": "14:20",
+      "kind": "page",
+      "title": "Hesap güvenliği — PostaKuş",
+      "url": "postakus.net/ayarlar/guvenlik",
+      "pageId": "postakus"
+    },
+    {
+      "id": "h15",
+      "day": "2026-09-24",
+      "time": "14:18",
+      "kind": "search",
+      "title": "PostaKuş güvenlik kartı nasıl çalışır",
+      "url": "arayici.com/ara?q=postakuş+güvenlik+kartı",
+      "pageId": "s-kart"
+    },
+    {
+      "id": "h16",
+      "day": "2026-09-19",
+      "time": "22:40",
+      "kind": "page",
+      "title": "sftp.mavikule-veri.com",
+      "url": "sftp.mavikule-veri.com",
+      "pageId": "sftp"
+    },
+    {
+      "id": "h17",
+      "day": "2026-09-19",
+      "time": "22:31",
+      "kind": "page",
+      "title": "Mavikule Veri Hizmetleri — Hakkımızda",
+      "url": "mavikule-veri.com/hakkimizda",
+      "pageId": "mavikule"
+    },
+    {
+      "id": "h18",
+      "day": "2026-09-19",
+      "time": "22:29",
+      "kind": "search",
+      "title": "mavikule veri hizmetleri",
+      "url": "arayici.com/ara?q=mavikule+veri+hizmetleri",
+      "pageId": "s-mavikule"
+    },
+    {
+      "id": "h19",
+      "day": "2026-09-12",
+      "time": "10:05",
+      "kind": "page",
+      "title": "Moda'nın en iyi 10 kahvaltı mekânı",
+      "url": "lezzetrotasi.com/moda-kahvalti",
+      "pageId": "kahvalti"
+    },
+    {
+      "id": "h20",
+      "day": "2026-09-12",
+      "time": "09:58",
+      "kind": "search",
+      "title": "somonlu kedi maması indirim",
+      "url": "arayici.com/ara?q=somonlu+kedi+maması+indirim",
+      "pageId": "s-mama"
+    }
+  ],
+  "bookmarks": [
+    {
+      "title": "PostaKuş",
+      "url": "postakus.net/ayarlar/guvenlik",
+      "pageId": "postakus"
+    },
+    {
+      "title": "Akçena Jira",
+      "url": "jira.akcena.com.tr",
+      "pageId": "jira"
+    },
+    {
+      "title": "Açık Kayıt — Defne Aksoy",
+      "url": "acikkayit.com.tr/yazar/defne-aksoy",
+      "pageId": "defne"
+    },
+    {
+      "title": "Kadıköy hava durumu",
+      "url": "havadurumu.net/kadikoy",
+      "pageId": "hava"
+    }
+  ],
+  "pages": {
+    "bilet": {
+      "site": "Otobüsçü",
+      "title": "Biletiniz hazır",
+      "blocks": [
+        {
+          "type": "fields",
+          "items": [
+            [
+              "Yolcu",
+              "Z. A."
+            ],
+            [
+              "Kalkış",
+              "Esenler Otogarı · 25.09.2026 07:30"
+            ],
+            [
+              "Varış",
+              "████████"
+            ],
+            [
+              "Koltuk",
+              "23 (cam kenarı)"
+            ],
+            [
+              "Not",
+              "Yanında evcil hayvan: 1 (taşıma çantasında)"
+            ]
+          ]
+        },
+        {
+          "type": "notice",
+          "tone": "warn",
+          "text": "Bu sayfanın bir kısmı önbellekten silinmiş."
+        }
+      ]
+    },
+    "s-kedi": {
+      "site": "Arayıcı",
+      "title": "kedi otobüse alınır mı",
+      "blocks": [
+        {
+          "type": "results",
+          "items": [
+            {
+              "title": "Evcil hayvanla otobüs yolculuğu: bilmeniz gerekenler",
+              "url": "yolrehberi.net/evcil-hayvan",
+              "snippet": "Çoğu firma, taşıma çantasındaki küçük evcil hayvanları kabul ediyor. Biletinizi alırken belirtmeyi unutmayın..."
+            },
+            {
+              "title": "Kedimle 9 saat yolculuk yaptım — Forum",
+              "url": "patiforum.net/konu/2211",
+              "snippet": "Sakinleştirici vermedim, çantanın üstünü örttüm, gayet sakin geçti..."
+            }
+          ]
+        }
+      ]
+    },
+    "pansiyon": {
+      "site": "Rüzgârgülü Pansiyon",
+      "title": "Uzun süreli kiralık odalar",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Kış ayları için uzun süreli kiralık odalarımız mevcuttur. Sessiz, sakin, deniz manzaralı."
+        },
+        {
+          "type": "fields",
+          "items": [
+            [
+              "Evcil hayvan",
+              "Kabul edilir"
+            ],
+            [
+              "Ödeme",
+              "Elden"
+            ],
+            [
+              "Kimlik",
+              "Gerekmez (uzun süreli konaklamada)"
+            ]
+          ]
+        },
+        {
+          "type": "notice",
+          "tone": "warn",
+          "text": "Adres ve iletişim bilgileri önbellekte bulunamadı."
+        }
+      ]
+    },
+    "s-ada": {
+      "site": "Arayıcı",
+      "title": "Rüzgârlı bir adada kiralık oda",
+      "blocks": [
+        {
+          "type": "results",
+          "items": [
+            {
+              "title": "Kışın adalarda kiralık oda bulmak",
+              "url": "gezginyazar.com/kis-adalar",
+              "snippet": "Turistler gidince adalar sessizleşir, fiyatlar düşer. Pek çok pansiyon kışın uzun süreli kiralar..."
+            },
+            {
+              "title": "Rüzgârgülü Pansiyon",
+              "url": "ruzgargulu-pansiyon.com",
+              "snippet": "Uzun süreli kiralık odalar. Evcil hayvan kabul edilir."
+            }
+          ]
+        }
+      ]
+    },
+    "mdm": {
+      "site": "Pusula Topluluk",
+      "title": "MDM profili nasıl kaldırılır?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Soru: Şirketin taktığı cihaz yönetimi (MDM) profili, ekranımı uzaktan görmelerine ve cihazı silmelerine izin veriyor mu?"
+        },
+        {
+          "type": "p",
+          "text": "Cevap (moderatör): Evet. MDM profili olan bir cihaz, ağa bağlandığı anda uzaktan kilitlenebilir veya sıfırlanabilir. Profili yönetici yetkisi olmadan kaldıramazsınız; ancak cihazı ağdan ayırmak uzak komutları engeller."
+        },
+        {
+          "type": "p",
+          "text": "Kullanıcı 'z.a.' yanıtladı: Peki ağ bağlantısını otomatik kesen bir betik yazsam? Uzak bir silme komutu geldiği anda..."
+        },
+        {
+          "type": "notice",
+          "tone": "info",
+          "text": "Bu konu kilitlenmiştir."
+        }
+      ]
+    },
+    "s-uzak": {
+      "site": "Arayıcı",
+      "title": "Uzak erişim nasıl engellenir",
+      "blocks": [
+        {
+          "type": "results",
+          "items": [
+            {
+              "title": "Dolandırıcılar 'destek' kılığında: uzak erişim kodunu kimseyle paylaşmayın",
+              "url": "guvenlirehber.org/uzak-erisim",
+              "snippet": "Gerçek bir destek ekibi sizden asla uzak erişim kodu ya da doğrulama kodu istemez..."
+            },
+            {
+              "title": "Uzak masaüstü bağlantılarını kapatma rehberi",
+              "url": "teknikrehber.net/uzak-masaustu",
+              "snippet": "Ayarlar > Ağ > Uzak oturumlar bölümünden..."
+            }
+          ]
+        }
+      ]
+    },
+    "s-muhbir": {
+      "site": "Arayıcı",
+      "title": "Muhbirler yasal olarak korunuyor mu",
+      "blocks": [
+        {
+          "type": "results",
+          "items": [
+            {
+              "title": "Usulsüzlüğü bildiren çalışanlar: haklarınız",
+              "url": "hukukkosesi.net/muhbir",
+              "snippet": "Kamu yararına bildirimde bulunan çalışanların işten çıkarılmaya karşı korunması konusunda..."
+            },
+            {
+              "title": "Bir muhbirin hikâyesi: 'Her şeyimi kaybettim ama pişman değilim'",
+              "url": "acikkayit.com.tr/yazi/muhbir",
+              "snippet": "Defne Aksoy yazdı. Bir sigorta şirketindeki usulsüzlüğü ortaya çıkaran çalışan..."
+            }
+          ]
+        }
+      ]
+    },
+    "acikkayit": {
+      "site": "Açık Kayıt",
+      "title": "Kaynağını koruyan gazetecilik",
+      "blocks": [
+        {
+          "type": "fields",
+          "items": [
+            [
+              "Yazar",
+              "Defne Aksoy"
+            ],
+            [
+              "Tarih",
+              "02.06.2026"
+            ]
+          ]
+        },
+        {
+          "type": "p",
+          "text": "Bir kaynak bize ulaştığında ilk sorumluluğumuz onu korumaktır. Belgeleri doğrularız, ama kaynağın kimliğini asla açıklamayız."
+        },
+        {
+          "type": "p",
+          "text": "Bize ulaşmak isteyenler için tavsiyemiz: iş cihazınızdan yazmayın. Şirket cihazları çoğu zaman izlenir."
+        }
+      ]
+    },
+    "s-gizli": {
+      "site": "Arayıcı",
+      "title": "Gizli kaynak olarak gazeteciyle konuşmak",
+      "blocks": [
+        {
+          "type": "results",
+          "items": [
+            {
+              "title": "Kaynağını koruyan gazetecilik — Açık Kayıt",
+              "url": "acikkayit.com.tr/yazi/kaynak-guvenligi",
+              "snippet": "Bir kaynak bize ulaştığında ilk sorumluluğumuz onu korumaktır..."
+            }
+          ]
+        }
+      ]
+    },
+    "s-avukat": {
+      "site": "Arayıcı",
+      "title": "Avukat ücretsiz danışma hattı",
+      "blocks": [
+        {
+          "type": "results",
+          "items": [
+            {
+              "title": "Ücretsiz hukuki danışma: kimler yararlanabilir?",
+              "url": "hukukkosesi.net/ucretsiz-danisma",
+              "snippet": "Maddi durumu yetersiz olan vatandaşlar ücretsiz avukatlık hizmetinden yararlanabilir..."
+            }
+          ]
+        }
+      ]
+    },
+    "hukuk": {
+      "site": "Hukuk Köşesi",
+      "title": "Veri ihlali nedir?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Kişisel verilerin, sahibinin bilgisi ve rızası olmadan üçüncü kişilere aktarılması veya satılması ciddi bir ihlaldir."
+        },
+        {
+          "type": "p",
+          "text": "Bu tür ihlaller, ilgili veri denetim kuruluna bildirilebilir. Bildirimde bulunan çalışanın elinde somut belge olması süreci hızlandırır."
+        }
+      ]
+    },
+    "s-yurtdisi": {
+      "site": "Arayıcı",
+      "title": "Yurt dışına müşteri verisi satmak suç mu",
+      "blocks": [
+        {
+          "type": "results",
+          "items": [
+            {
+              "title": "Veri ihlali nedir? — Hukuk Köşesi",
+              "url": "hukukkosesi.net/veri-ihlali",
+              "snippet": "Kişisel verilerin, sahibinin bilgisi ve rızası olmadan üçüncü kişilere aktarılması..."
+            },
+            {
+              "title": "Şirketler verinizi nasıl satıyor?",
+              "url": "acikkayit.com.tr/yazi/veri-pazari",
+              "snippet": "Veri aracıları, farklı kaynaklardan topladıkları bilgileri 'zenginleştirilmiş profil' adıyla satıyor..."
+            }
+          ]
+        }
+      ]
+    },
+    "kargo": {
+      "site": "Kuşkanadı Kargo",
+      "title": "Gönderiniz oluşturuldu",
+      "blocks": [
+        {
+          "type": "fields",
+          "items": [
+            [
+              "Takip no",
+              "TK-2609-4471"
+            ],
+            [
+              "Gönderici",
+              "(gizli)"
+            ],
+            [
+              "Alıcı",
+              "█████ █████"
+            ],
+            [
+              "İçerik beyanı",
+              "Dizüstü bilgisayar (1), not (1), kart (1)"
+            ],
+            [
+              "Teslimat",
+              "Alıcı adresinde, kapıya"
+            ]
+          ]
+        },
+        {
+          "type": "notice",
+          "tone": "info",
+          "text": "Gönderiniz 3-10 iş günü içinde teslim edilecektir."
+        }
+      ]
+    },
+    "postakus": {
+      "site": "PostaKuş",
+      "title": "Hesap güvenliği",
+      "blocks": [
+        {
+          "type": "fields",
+          "items": [
+            [
+              "Hesap",
+              "zeynep.arslan@postakus.net"
+            ],
+            [
+              "İki adımlı doğrulama",
+              "Etkin — Güvenlik kartı"
+            ],
+            [
+              "Kart no",
+              "****-7731"
+            ],
+            [
+              "SMS ile doğrulama",
+              "Kapalı"
+            ]
+          ]
+        },
+        {
+          "type": "notice",
+          "tone": "warn",
+          "text": "Güvenlik kartınızı yalnızca güvendiğiniz bir yerde saklayın. Kartı kaybederseniz hesabınıza erişemezsiniz."
+        }
+      ]
+    },
+    "s-kart": {
+      "site": "Arayıcı",
+      "title": "PostaKuş güvenlik kartı nasıl çalışır",
+      "blocks": [
+        {
+          "type": "results",
+          "items": [
+            {
+              "title": "Güvenlik kartı ile iki adımlı doğrulama — PostaKuş Yardım",
+              "url": "yardim.postakus.net/guvenlik-karti",
+              "snippet": "Giriş yaparken sizden kartınızdaki birkaç hücrenin (ör. B2, D4) rakamlarını girmeniz istenir. Kartınız sadece sizde olduğu için..."
+            }
+          ]
+        }
+      ]
+    },
+    "sftp": {
+      "site": "sftp.mavikule-veri.com",
+      "title": "Erişim reddedildi",
+      "blocks": [
+        {
+          "type": "notice",
+          "tone": "error",
+          "text": "403 — Bu sunucuya yalnızca yetkili IP adresleri bağlanabilir. Bağlantı denemeniz kaydedildi."
+        }
+      ]
+    },
+    "mavikule": {
+      "site": "Mavikule Veri Hizmetleri",
+      "title": "Hakkımızda",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "Veriyi değere dönüştürüyoruz."
+        },
+        {
+          "type": "p",
+          "text": "Mavikule; finans, perakende ve sigorta sektörlerine 'zenginleştirilmiş tüketici profilleri' sunan bir veri çözümleri şirketidir."
+        },
+        {
+          "type": "p",
+          "text": "Güvenilir kaynaklardan sağladığımız veriler sayesinde müşterilerimiz doğru kişiye, doğru zamanda ulaşır."
+        },
+        {
+          "type": "fields",
+          "items": [
+            [
+              "Merkez",
+              "Yurt dışı"
+            ],
+            [
+              "İletişim",
+              "ops@mavikule-veri.com"
+            ]
+          ]
+        }
+      ]
+    },
+    "s-mavikule": {
+      "site": "Arayıcı",
+      "title": "mavikule veri hizmetleri",
+      "blocks": [
+        {
+          "type": "results",
+          "items": [
+            {
+              "title": "Mavikule Veri Hizmetleri — Hakkımızda",
+              "url": "mavikule-veri.com/hakkimizda",
+              "snippet": "Finans, perakende ve sigorta sektörlerine zenginleştirilmiş tüketici profilleri..."
+            },
+            {
+              "title": "sftp.mavikule-veri.com",
+              "url": "sftp.mavikule-veri.com",
+              "snippet": "Yetkili erişim."
+            }
+          ]
+        }
+      ]
+    },
+    "kahvalti": {
+      "site": "Lezzet Rotası",
+      "title": "Moda'nın en iyi 10 kahvaltı mekânı",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "1. Deniz kenarında serpme kahvaltı. 2. Ev yapımı reçelleriyle ünlü küçük bir kafe. 3. Kedilerin masaların arasında dolaştığı bahçe..."
+        }
+      ]
+    },
+    "s-mama": {
+      "site": "Arayıcı",
+      "title": "somonlu kedi maması indirim",
+      "blocks": [
+        {
+          "type": "results",
+          "items": [
+            {
+              "title": "Somonlu yetişkin kedi maması — %20 indirim",
+              "url": "patimarket.com/somonlu",
+              "snippet": "Hafta sonuna özel..."
+            }
+          ]
+        }
+      ]
+    },
+    "jira": {
+      "site": "Akçena Jira",
+      "title": "Oturum süresi doldu",
+      "blocks": [
+        {
+          "type": "notice",
+          "tone": "error",
+          "text": "Hesabınız devre dışı bırakıldı. Lütfen sistem yöneticinizle görüşün."
+        }
+      ]
+    },
+    "defne": {
+      "site": "Açık Kayıt",
+      "title": "Defne Aksoy",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Veri güvenliği, şirket usulsüzlükleri ve teknoloji üzerine araştırmacı gazeteci."
+        },
+        {
+          "type": "results",
+          "items": [
+            {
+              "title": "Kaynağını koruyan gazetecilik",
+              "url": "acikkayit.com.tr/yazi/kaynak-guvenligi",
+              "snippet": "02.06.2026"
+            },
+            {
+              "title": "Bir muhbirin hikâyesi",
+              "url": "acikkayit.com.tr/yazi/muhbir",
+              "snippet": "14.04.2026"
+            },
+            {
+              "title": "Şirketler verinizi nasıl satıyor?",
+              "url": "acikkayit.com.tr/yazi/veri-pazari",
+              "snippet": "03.03.2026"
+            }
+          ]
+        }
+      ]
+    },
+    "hava": {
+      "site": "havadurumu.net",
+      "title": "Kadıköy hava durumu",
+      "blocks": [
+        {
+          "type": "fields",
+          "items": [
+            [
+              "Bugün",
+              "Sağanak yağış, 16°C"
+            ]
+          ]
+        },
+        {
+          "type": "p",
+          "text": "Şemsiyenizi almayı unutmayın."
+        }
+      ]
+    }
+  }
+}

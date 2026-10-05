@@ -1,0 +1,42 @@
+{
+  "_aciklama": "Çöp Kutusu'ndaki dosyalar. kind: 'archive' (kilitli uygulamayı açar), 'text' (metin görüntüleyici), 'unsupported' (önizleme yok). 'archive' bölümü arsiv.zip açıldığında görünen içeriktir.",
+  "files": [
+    { "id": "arsiv", "name": "arsiv.zip", "size": "2,4 MB", "deletedAt": "2026-09-23", "kind": "archive", "appId": "archive" },
+    { "id": "toplanti", "name": "toplanti_notu_0915.txt", "size": "2 KB", "deletedAt": "2026-09-16", "kind": "text",
+      "content": "Q3 Değerlendirme — 15.09\n\n• İşlem hacmi: %18 artış\n• Yeni gelir kalemi: \"veri ortaklıkları\" (sunumda üstünden geçildi, soru sorulmadı)\n• M.K.: \"Bu konu yönetim seviyesinde, ekiplerin bilmesine gerek yok.\"\n\nNeden gerek yok?" },
+    { "id": "cv", "name": "eski_cv_2023.pdf", "size": "184 KB", "deletedAt": "2026-08-02", "kind": "unsupported",
+      "message": "Bu dosya türü önizlenemiyor." },
+    { "id": "bozuk", "name": "Ekran Resmi 2026-09-18.png", "size": "0 KB", "deletedAt": "2026-09-18", "kind": "unsupported",
+      "message": "Dosya bozuk görünüyor. Biri içeriğini silmiş olabilir." }
+  ],
+  "archive": {
+    "contents": [
+      { "id": "shot", "name": "musteri_aktarim_eylul.png", "size": "812 KB", "kind": "screenshot" },
+      { "id": "benioku", "name": "beni_oku.txt", "size": "1 KB", "kind": "text",
+        "content": "Bunu bulduysan doğru yoldasın.\n\nBu sadece bir parça. Geri kalanını daha derine sakladım; çünkü onlar da arıyor.\n\n–Z" }
+    ],
+    "screenshot": {
+      "assetId": "archive_screenshot",
+      "appName": "VeriPanel · Raporlar",
+      "title": "HASAT · Aktarım Özeti — Eylül 2026",
+      "subtitle": "Alıcı: Mavikule Veri Hizmetleri Ltd. · Sözleşme No: MV-2291",
+      "stamp": "GİZLİ — İÇ KULLANIM",
+      "columns": ["Paket", "Tarih", "Kayıt", "İçerik", "Birim", "Tutar", "Durum"],
+      "rows": [
+        ["AKC-0901", "01.09.2026", "48.210", "Ad soyad, TCKN, telefon", "2,10 €", "101.241 €", "Teslim edildi"],
+        ["AKC-0905", "05.09.2026", "31.775", "IBAN, bakiye segmenti", "3,40 €", "108.035 €", "Teslim edildi"],
+        ["AKC-0912", "12.09.2026", "52.904", "Harcama geçmişi (12 ay)", "4,75 €", "251.294 €", "Teslim edildi"],
+        ["AKC-0917", "17.09.2026", "19.388", "Kredi skoru, adres", "5,20 €", "100.818 €", "Teslim edildi"],
+        ["AKC-0924", "24.09.2026", "60.000", "Tam profil (maskesiz)", "8,00 €", "480.000 €", "Bekliyor"]
+      ],
+      "sampleTitle": "Örnek kayıtlar (önizleme)",
+      "sampleColumns": ["Müşteri No", "Ad Soyad", "TCKN", "IBAN", "Segment"],
+      "sampleRows": [
+        ["#104427", "A**** Y*****", "184******62", "TR** **** **** 4412", "Platin"],
+        ["#104431", "M***** K***", "297******08", "TR** **** **** 0937", "Altın"],
+        ["#104436", "S**** D*****", "351******14", "TR** **** **** 7720", "Standart"]
+      ],
+      "footer": ["Toplam: 212.277 kayıt · 1.041.388 €", "Ödeme hesabı: ••••3391 (yurt dışı)", "Onay: M. Karataş (CTO)"]
+    }
+  }
+}

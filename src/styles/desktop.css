@@ -1,0 +1,173 @@
+/* ==================================================================
+   desktop.css — Masaüstü, simgeler, görev çubuğu, başlat menüsü,
+   bildirimler
+   ================================================================== */
+.scene-desktop > * { position: absolute; }
+
+/* Duvar kâğıdındaki silik pusula filigranı */
+.wallpaper__mark {
+  right: 6%; bottom: 14%; width: 320px; height: 320px;
+  color: rgba(255, 255, 255, 0.025); pointer-events: none;
+}
+.wallpaper__mark svg { width: 100%; height: 100%; stroke-width: 0.6; }
+
+/* ---- Simgeler ---------------------------------------------------- */
+.desk-icons {
+  top: 18px; left: 14px; bottom: calc(var(--taskbar-h) + 20px);
+  display: grid; grid-auto-flow: column; grid-template-rows: repeat(auto-fill, 104px);
+  gap: 4px; z-index: 1;
+}
+.desk-icon {
+  position: relative; width: 92px; height: 100px;
+  display: grid; justify-items: center; align-content: start; gap: 7px;
+  padding: 8px 4px; border: 1px solid transparent; border-radius: 10px; background: none;
+  outline: none;
+}
+.desk-icon:hover { background: rgba(255, 255, 255, 0.05); }
+.desk-icon.is-selected, .desk-icon:focus-visible { background: rgba(143, 168, 255, 0.16); border-color: rgba(143, 168, 255, 0.35); }
+.desk-icon__tile {
+  width: 54px; height: 54px; border-radius: 15px;
+  display: grid; place-items: center; color: rgba(255, 255, 255, 0.95);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.45), inset 0 1px 0 rgba(255, 255, 255, 0.35);
+}
+.desk-icon__tile svg { width: 30px; height: 30px; filter: drop-shadow(0 1px 1px rgba(0, 0, 0, 0.25)); }
+.desk-icon__label { font-size: 12px; text-align: center; text-shadow: 0 1px 3px rgba(0, 0, 0, 0.9); line-height: 1.25; }
+.desk-icon__lock {
+  position: absolute; top: 4px; right: 14px; width: 22px; height: 22px; border-radius: 50%;
+  background: #10121c; border: 1px solid var(--line-strong); color: var(--warn);
+  display: none; place-items: center;
+}
+.desk-icon__lock svg { width: 13px; height: 13px; }
+.desk-icon.is-locked .desk-icon__lock { display: grid; }
+
+/* ---- Pencere katmanı --------------------------------------------- */
+.window-layer { inset: 0 0 var(--taskbar-h) 0; z-index: 2; pointer-events: none; }
+.window-layer > * { pointer-events: auto; }
+
+/* ---- Görev çubuğu ------------------------------------------------ */
+.taskbar {
+  left: 0; right: 0; bottom: 0; height: var(--taskbar-h); z-index: 1000;
+  display: flex; align-items: center; gap: 8px; padding: 0 10px;
+  background: rgba(10, 11, 19, 0.82);
+  backdrop-filter: blur(18px) saturate(140%);
+  border-top: 1px solid var(--line);
+}
+.taskbar__start {
+  width: 38px; height: 38px; border-radius: 10px; border: 0;
+  background: linear-gradient(145deg, rgba(143, 168, 255, 0.25), rgba(179, 156, 255, 0.15));
+  color: var(--accent); display: grid; place-items: center;
+}
+.taskbar__start:hover { background: rgba(143, 168, 255, 0.32); }
+.taskbar__start svg { width: 22px; height: 22px; }
+.taskbar__apps { flex: 1; display: flex; gap: 6px; overflow: hidden; padding-left: 6px; }
+.taskbar__app {
+  display: flex; align-items: center; gap: 8px; max-width: 190px;
+  height: 36px; padding: 0 12px; border-radius: 8px;
+  border: 1px solid transparent; background: rgba(255, 255, 255, 0.04);
+  position: relative;
+}
+.taskbar__app:hover { background: rgba(255, 255, 255, 0.08); }
+.taskbar__app.is-active { background: rgba(255, 255, 255, 0.1); border-color: var(--line); }
+.taskbar__app.is-active::after {
+  content: ''; position: absolute; left: 30%; right: 30%; bottom: 2px; height: 2px; border-radius: 2px; background: var(--accent);
+}
+.taskbar__app-icon svg { width: 17px; height: 17px; display: block; }
+.taskbar__app-title { font-size: 12.5px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+
+.tray { display: flex; align-items: center; gap: 6px; color: var(--text-dim); }
+.tray__icon, .tray__btn { width: 30px; height: 30px; display: grid; place-items: center; border-radius: 7px; border: 0; background: none; color: inherit; }
+.tray__btn:hover { background: rgba(255, 255, 255, 0.08); color: var(--text); }
+.tray__icon svg, .tray__btn svg { width: 18px; height: 18px; }
+.tray__remote {
+  font-family: var(--mono); font-size: 12.5px; color: var(--danger);
+  border: 1px solid rgba(255, 93, 108, 0.45); background: rgba(255, 93, 108, 0.1);
+  padding: 4px 10px; border-radius: 6px; letter-spacing: 0.12em;
+  animation: pulse-red 1.6s ease-in-out infinite;
+}
+@keyframes pulse-red { 50% { box-shadow: 0 0 14px rgba(255, 93, 108, 0.45); } }
+.taskbar__clock { display: grid; justify-items: end; line-height: 1.2; padding: 0 6px 0 8px; }
+.taskbar__time { font-size: 13px; color: var(--text); font-weight: 500; }
+.taskbar__date { font-size: 11px; }
+
+/* ---- Başlat menüsü ----------------------------------------------- */
+.start-menu {
+  left: 10px; bottom: calc(var(--taskbar-h) + 8px); z-index: 1001; width: 260px;
+  background: var(--panel); border: 1px solid var(--line); border-radius: 14px;
+  box-shadow: var(--shadow); padding: 8px; backdrop-filter: blur(20px);
+  display: grid; gap: 2px;
+  opacity: 0; transform: translateY(10px); pointer-events: none;
+  transition: opacity 0.16s, transform 0.16s;
+}
+.start-menu.is-open { opacity: 1; transform: none; pointer-events: auto; }
+.start-menu__user { display: flex; gap: 10px; align-items: center; padding: 8px 8px 12px; border-bottom: 1px solid var(--line); margin-bottom: 4px; }
+.start-menu__user strong { display: block; font-size: 13.5px; }
+.start-menu__user small { color: var(--text-faint); font-size: 11.5px; }
+.start-menu__avatar { width: 36px; height: 36px; border-radius: 50%; display: grid; place-items: center; font-weight: 700; background: linear-gradient(145deg, #8fa8ff, #b39cff); color: #10121d; }
+.start-menu__item { display: flex; align-items: center; gap: 10px; padding: 8px 10px; border: 0; border-radius: 8px; background: none; text-align: left; font-size: 13px; }
+.start-menu__item:hover { background: rgba(255, 255, 255, 0.07); }
+.start-menu__item svg { width: 17px; height: 17px; display: block; color: var(--text-dim); }
+.start-menu hr { border: 0; border-top: 1px solid var(--line); margin: 4px 0; width: 100%; }
+
+/* ---- Bildirimler ------------------------------------------------- */
+.toasts { top: 14px; right: 14px; z-index: 1002; display: grid; gap: 10px; width: 320px; pointer-events: none; }
+.toast {
+  pointer-events: auto; display: flex; gap: 12px; align-items: flex-start;
+  background: var(--panel); border: 1px solid var(--line); border-radius: 12px;
+  padding: 12px 14px; box-shadow: var(--shadow); backdrop-filter: blur(16px);
+}
+.toast--clickable { cursor: pointer; }
+.toast--clickable:hover { border-color: var(--line-strong); }
+.toast__icon { width: 32px; height: 32px; border-radius: 9px; flex: none; display: grid; place-items: center; background: rgba(143, 168, 255, 0.15); color: var(--accent); }
+.toast__icon svg { width: 18px; height: 18px; }
+.toast__content { display: grid; gap: 2px; }
+.toast__title { font-size: 13px; }
+.toast__text { font-size: 12.5px; color: var(--text-dim); line-height: 1.4; }
+
+/* ---- Perde sonu kartı -------------------------------------------- */
+.endcard {
+  inset: 0; z-index: 3000; display: grid; place-items: center;
+  background: radial-gradient(ellipse at center, rgba(8, 9, 16, 0.75), rgba(0, 0, 0, 0.92));
+  backdrop-filter: blur(3px);
+}
+.endcard__inner { text-align: center; display: grid; gap: 14px; justify-items: center; max-width: 520px; padding: 24px; }
+.endcard h2 { font-family: var(--mono); font-size: 15px; letter-spacing: 0.35em; color: var(--danger); }
+.endcard__text { font-size: 24px; line-height: 1.4; font-weight: 600; }
+.endcard__soon { color: var(--text-dim); }
+.endcard__buttons { display: flex; gap: 10px; margin-top: 12px; }
+
+/* ---- 2. Perde: yeni simge, ağ simgesi, geri sayım --------------- */
+.desk-icon.is-new .desk-icon__tile { animation: new-glow 1.6s ease-in-out 3; }
+@keyframes new-glow { 50% { box-shadow: 0 0 0 4px rgba(143, 168, 255, 0.45), 0 8px 18px rgba(0, 0, 0, 0.45); } }
+.tray__icon.is-online { color: var(--warn); }
+
+.countdown {
+  top: 18px; left: 50%; translate: -50% 0; z-index: 2600;
+  display: flex; align-items: center; gap: 16px;
+  background: rgba(40, 6, 12, 0.92); border: 1px solid var(--danger);
+  border-radius: 12px; padding: 12px 22px;
+  box-shadow: 0 0 40px rgba(255, 93, 108, 0.35);
+  font-family: var(--mono);
+}
+.countdown__label { color: #ffb3bb; font-size: 12px; letter-spacing: 0.3em; }
+.countdown__time { color: var(--danger); font-size: 30px; min-width: 110px; text-align: center; display: inline-block; }
+.countdown.is-stopped { border-color: var(--ok); box-shadow: 0 0 40px rgba(95, 224, 165, 0.3); background: rgba(6, 30, 20, 0.92); }
+.countdown.is-stopped .countdown__time { color: var(--ok); font-size: 18px; letter-spacing: 0.15em; }
+.countdown.is-stopped .countdown__label { text-decoration: line-through; color: var(--text-faint); }
+
+/* ---- "Sıradaki adım" kartı -------------------------------------- */
+.objective {
+  right: 14px; bottom: calc(var(--taskbar-h) + 14px); z-index: 1; width: 280px;
+  background: rgba(30, 24, 12, 0.85); border: 1px solid rgba(240, 180, 90, 0.4);
+  border-radius: 12px; backdrop-filter: blur(10px); overflow: hidden;
+}
+.objective__head { width: 100%; display: flex; justify-content: space-between; border: 0; background: none; padding: 9px 12px 4px; color: var(--warn); font-size: 12px; font-weight: 600; }
+.objective__text { padding: 0 12px 11px; font-size: 13px; line-height: 1.5; color: #f3e4c6; }
+.objective.is-collapsed .objective__text { display: none; }
+.objective.is-collapsed .objective__head { padding-bottom: 9px; }
+.objective.is-collapsed .objective__toggle::after { content: '+'; }
+.objective.is-collapsed .objective__toggle { font-size: 0; }
+.objective.is-collapsed .objective__toggle::after { font-size: 12px; }
+
+/* ---- 4. Perde: ekran paylaşımı göstergesi, kararma -------------- */
+.tray__share { font-size: 11.5px; color: var(--danger); border: 1px solid rgba(255, 93, 108, 0.45); border-radius: 6px; padding: 3px 8px; animation: pulse-red 1.6s ease-in-out infinite; white-space: nowrap; }
+.blackout { inset: 0; z-index: 5000; background: #000; }

@@ -1,0 +1,100 @@
+{
+  "_aciklama": "Kanıtların gönderilebileceği kişiler ve oyunun sonları. 'rules' listesi yukarıdan aşağıya okunur; koşulu tutan İLK son seçilir. when.includes: seçilen alıcıların hepsi bunları içermeli; when.only: seçim tam olarak bu olmalı; when.deleted: kanıtlar silindi. 'epilogue': önceki seçimlere göre sona eklenen satırlar (flag ya da BT Destek seçimi).",
+
+  "window": {
+    "title": "kanit_tam.zip — Gönder",
+    "intro": "Kanıtları kime göndereceksin? Birden fazla alıcı seçebilirsin.",
+    "send": "Gönder",
+    "delete": "Kanıtları sil ve unut",
+    "confirmSend": "Gönderilsin mi? Bu kararı geri alamazsın.",
+    "confirmDelete": "Bütün kanıtlar silinecek. Emin misin?",
+    "sending": "Gönderiliyor...",
+    "nothingSelected": "Önce en az bir alıcı seç."
+  },
+
+  "recipients": [
+    { "id": "journalist", "name": "Defne Aksoy", "detail": "Araştırmacı gazeteci · Açık Kayıt", "address": "defne.aksoy@acikkayit.com.tr" },
+    { "id": "regulator", "name": "Kişisel Veri Denetim Kurulu", "detail": "Resmî ihbar", "address": "ihbar@kvdk-kurul.org" },
+    { "id": "company", "name": "Murat Karataş", "detail": "Akçena · CTO — \"teklif\"", "address": "m.karatas@akcena.com.tr" }
+  ],
+
+  "endings": [
+    {
+      "id": "ihanet",
+      "title": "Teklif",
+      "tone": "bad",
+      "when": { "includes": ["company"] },
+      "paragraphs": [
+        "Gönder tuşuna bastıktan birkaç saniye sonra BT Destek penceresine tek bir satır düştü: \"Doğru karar.\"",
+        "Ertesi hafta hesabına adı olmayan bir havale geldi. Başka adreslere giden kopyalar ise hiçbir zaman açılmadı; şirketin avukatları onları \"çalıntı belge\" diye çoktan raporlamıştı.",
+        "HASAT her gece 03:00'te çalışmaya devam etti.",
+        "Zeynep işe geri dönmedi. Sana da bir daha yazmadı. Pamuk'un yeni fotoğraflarını ortak arkadaşlarınızdan gördün."
+      ]
+    },
+    {
+      "id": "adalet",
+      "title": "Gün Işığı",
+      "tone": "good",
+      "when": { "includes": ["journalist", "regulator"] },
+      "paragraphs": [
+        "Açık Kayıt haberi üç gün sonra yayımladı: \"Bir fintech şirketi müşterilerinin verisini nasıl sattı?\" Aynı gün Kurul, Akçena hakkında resmî inceleme başlattı.",
+        "Haber gündemden düşmedi; çünkü bu sefer kâğıt üstünde değil, belgeli bir ihbar vardı. HASAT bir gece 03:00'te çalışmadı. Sonra bir daha hiç çalışmadı.",
+        "Murat Karataş görevden alındı. Mavikule'nin sunucuları kapatıldı.",
+        "Zeynep iki hafta sonra Kadıköy'de bir kafede karşına oturdu. Pamuk kucağındaydı. \"Hava durumuna baktın mı?\" dedi. Dışarıda yağmur başlamıştı. İkiniz de şemsiyesizdiniz."
+      ]
+    },
+    {
+      "id": "manset",
+      "title": "Manşet",
+      "tone": "good",
+      "when": { "only": ["journalist"] },
+      "paragraphs": [
+        "Defne Aksoy belgeleri bir hafta boyunca doğruladı, sonra haberi yayımladı. Kaynağın adı hiçbir yerde geçmedi.",
+        "Haber çok konuşuldu. Akçena önce inkâr etti, sonra \"bir çalışanın hatası\" dedi, sonra sustu. Kamuoyu baskısıyla HASAT durduruldu.",
+        "Resmî bir soruşturma açılması aylar sürdü; şirketin avukatları her adımda direndi.",
+        "Zeynep bir ay sonra eve döndü. \"Bir gün herkes unutacak,\" dedi. \"Ama o gece 03:00'te çalışmayan o program... onu biz durdurduk.\""
+      ]
+    },
+    {
+      "id": "sorusturma",
+      "title": "Dosya No: 2026/417",
+      "tone": "mixed",
+      "when": { "only": ["regulator"] },
+      "paragraphs": [
+        "Kurul ihbarı kayda aldı ve sessizce inceleme başlattı. Gazetelerde tek satır çıkmadı.",
+        "Aylar sonra Akçena'ya yüklü bir para cezası kesildi; Mavikule ile sözleşme feshedildi. Bir basın bülteninde \"teknik bir uyumsuzluk giderilmiştir\" yazıyordu.",
+        "Kimse hesap vermedi ama HASAT kapandı.",
+        "Zeynep yasal muhbir korumasıyla yeni bir işe başladı. Size her cumartesi kahvaltıda aynı şeyi söylüyor: \"Yavaş oldu ama oldu.\""
+      ]
+    },
+    {
+      "id": "unutus",
+      "title": "Sessizlik",
+      "tone": "bad",
+      "when": { "deleted": true },
+      "paragraphs": [
+        "Dosyaları sildin. Laptopu kapattın ve bir daha açmadın.",
+        "Belki korktun; belki de bunun senin savaşın olmadığını düşündün. Kimse seni suçlayamazdı.",
+        "HASAT her gece 03:00'te çalışmaya devam etti. 212.277 kişinin bundan haberi olmadı.",
+        "Zeynep bir gün kapına geldi. Laptopu istedi. Gözlerine bakamadın. Arşivin şifresi neydi, hatırlıyor musun? Sessizlik."
+      ]
+    }
+  ],
+
+  "epilogue": [
+    { "flag": "triedToGiveRemoteCode", "text": "Bir keresinde neredeyse uzak erişim kodunu veriyordun. Zeynep'in betiği seni durdurdu. Bunu ona hiç anlatmadın." },
+    { "choice": { "beat": "a2-browser", "id": "accuse" }, "text": "BT Destek'e onların yüzüne gerçeği söylediğin o an, aklından hiç çıkmadı." },
+    { "choice": { "beat": "a4-offer", "id": "how-much" }, "text": "\"Ne kadar?\" diye sormuştun. Sadece merak etmiştin. Değil mi?" },
+    { "choice": { "beat": "a4-start", "id": "dont-touch" }, "text": "\"Ona dokunmayın!\" diye yazdığında ellerin titriyordu." }
+  ],
+
+  "screen": {
+    "endingLabel": "SON",
+    "foundLabel": "Bulduğun sonlar",
+    "unknown": "???",
+    "retry": "Seçime geri dön",
+    "restart": "Baştan başla",
+    "title": "Başlık ekranı",
+    "thanks": "Oynadığın için teşekkürler."
+  }
+}

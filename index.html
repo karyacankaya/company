@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta name="theme-color" content="#07080d" />
+    <title>company</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48'><rect x='10' y='21' width='28' height='21' rx='5' fill='%238fa8ff'/><path d='M15 22v-6a9 9 0 0 1 18 0v6' fill='none' stroke='%238fa8ff' stroke-width='3.2'/></svg>" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet" />
+    <!-- Oyunun CSS'i JavaScript ile yüklenir; o yüklenmeden uyarı kutuları görünmesin. -->
+    <style>.file-warning { display: none; }</style>
+  </head>
+  <body>
+    <!-- Bütün oyun bu kutunun içine JavaScript ile çizilir (src/main.js). -->
+    <div id="app"></div>
+
+    <!-- index.html dosyaya çift tıklanarak açılırsa oyun çalışamaz; nasıl açılacağını anlat. -->
+    <div class="file-warning" style="font: 16px/1.6 system-ui, sans-serif; max-width: 560px; margin: 60px auto; padding: 0 20px">
+      <h2>Oyun bu şekilde açılamaz</h2>
+      <p>index.html dosyası doğrudan açılmış. Oyunu çalıştırmak için proje klasöründe terminale şunu yaz:</p>
+      <pre style="background: #f2f2f2; padding: 10px 14px; border-radius: 6px">npm run dev</pre>
+      <p>Sonra tarayıcıda terminalin gösterdiği adresi aç (genelde <b>http://localhost:5173</b>).</p>
+    </div>
+    <script>
+      if (!location.protocol.startsWith('http')) document.querySelector('.file-warning').style.display = 'block';
+    </script>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

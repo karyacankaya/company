@@ -1,0 +1,43 @@
+/* ==================================================================
+   effects.css — Glitch, sahte imleç, girdi engelleyici
+   ================================================================== */
+
+/* Glitch sırasında tüm masaüstü titrer ve renkleri kayar. */
+.is-glitching { animation: glitch-shake 0.11s steps(2) infinite; }
+.is-glitching .window,
+.is-glitching .desk-icons,
+.is-glitching .taskbar { animation: glitch-rgb 0.18s steps(2) infinite; }
+
+@keyframes glitch-shake {
+  0% { transform: translate(0, 0); }
+  25% { transform: translate(-4px, 2px); }
+  50% { transform: translate(3px, -2px) skewX(-1deg); }
+  75% { transform: translate(-2px, -1px); }
+  100% { transform: translate(4px, 1px); }
+}
+@keyframes glitch-rgb {
+  0% { filter: drop-shadow(3px 0 0 rgba(255, 0, 80, 0.7)) drop-shadow(-3px 0 0 rgba(0, 220, 255, 0.7)); }
+  50% { filter: drop-shadow(-4px 0 0 rgba(255, 0, 80, 0.7)) drop-shadow(4px 0 0 rgba(0, 220, 255, 0.7)) hue-rotate(40deg); }
+  100% { filter: none; }
+}
+
+.glitch { position: absolute; inset: 0; z-index: 4000; pointer-events: none; overflow: hidden; }
+.glitch__scanlines {
+  position: absolute; inset: 0;
+  background: repeating-linear-gradient(0deg, rgba(255, 255, 255, 0.06) 0 2px, transparent 2px 5px);
+  animation: scan-move 0.25s linear infinite;
+  mix-blend-mode: overlay;
+}
+@keyframes scan-move { to { background-position: 0 25px; } }
+.glitch__slice {
+  position: absolute; left: -10%; right: -10%;
+  background: linear-gradient(90deg, rgba(255, 0, 90, 0.5), rgba(0, 220, 255, 0.5));
+  mix-blend-mode: difference;
+}
+
+/* Sahte imleç */
+.fake-cursor { position: fixed; left: 0; top: 0; z-index: 99999; pointer-events: none; filter: drop-shadow(0 2px 3px rgba(0, 0, 0, 0.5)); transform-origin: 2px 2px; }
+body.cursor-hijacked, body.cursor-hijacked * { cursor: none !important; }
+
+/* Perde sonu sırasında oyuncunun tıklamalarını yutan katman */
+.input-blocker { position: absolute; inset: 0; z-index: 2500; }

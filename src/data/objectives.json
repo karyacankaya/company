@@ -1,0 +1,109 @@
+{
+  "_aciklama": "Masaüstündeki \"Sıradaki adım\" kartı. Liste sırayla okunur: içinde bulunulan perdeye ait, henüz tamamlanmamış İLK görev gösterilir. doneWhen: { unlocked: kilit } | { flag: bayrak }. 'easyText': Kolay zorlukta gösterilen daha açık metin.",
+  "objectives": [
+    {
+      "act": 1,
+      "text": "Bilgisayarı kurcala. Notlar kilitli; parolasının ipucu başka bir uygulamada olabilir.",
+      "doneWhen": {
+        "unlocked": "notes"
+      },
+      "easyText": "Önce Fotoğraflar'a göz at. Sonra Notlar'ı aç: parolası Pamuk'la ilgili."
+    },
+    {
+      "act": 1,
+      "text": "Mesajlar'ın PIN'i bir yerlere not edilmiş olmalı.",
+      "doneWhen": {
+        "unlocked": "messages"
+      },
+      "easyText": "Notlar'daki \"Mesaj PIN'i\" notunu oku ve Mesajlar'ı aç."
+    },
+    {
+      "act": 1,
+      "text": "Emre, Zeynep'e bir dosyayı sorup duruyordu. O dosya nerede olabilir?",
+      "doneWhen": {
+        "unlocked": "archive"
+      },
+      "easyText": "Mesajlar'da Emre'yle sohbeti oku. Sonra Çöp Kutusu'ndaki arsiv.zip'i aç (parolası Notlar'daki şifreli notta)."
+    },
+    {
+      "act": 1,
+      "text": "Arşivin içine bak.",
+      "doneWhen": {
+        "flag": "act1Ending"
+      },
+      "easyText": "Arşivdeki musteri_aktarim_eylul.png dosyasını aç."
+    },
+    {
+      "act": 2,
+      "text": "E-posta'yı aç. Zeynep'in son gece neler aradığını merak ettin mi?",
+      "doneWhen": {
+        "unlocked": "emailPassword"
+      },
+      "easyText": "E-posta'yı aç. Parolanın ipucu Tarayıcı'nın geçmişinde."
+    },
+    {
+      "act": 2,
+      "text": "İki adımlı doğrulama için bir güvenlik kartı lazım. Zeynep onu bilgisayarda saklamazdı.",
+      "doneWhen": {
+        "unlocked": "emailCard"
+      },
+      "easyText": "İkinci adım için güvenlik kartı lazım: Kargo Notu → \"Kutuyu incele\"."
+    },
+    {
+      "act": 2,
+      "text": "Zeynep sana bir şey yazmış olabilir. Gönderilmemiş iletilere bak.",
+      "doneWhen": {
+        "flag": "act2Ending"
+      },
+      "easyText": "E-posta → Taslaklar → \"Sana\" iletisini oku."
+    },
+    {
+      "act": 3,
+      "text": "Terminal'i aç. Zeynep bir not bırakmış.",
+      "doneWhen": {
+        "unlocked": "evidence2"
+      },
+      "easyText": "Terminal'i aç ve yaz:  cat beni_oku.txt"
+    },
+    {
+      "act": 3,
+      "text": "Çözülen klasördeki dosyaları oku. Zeynep nereye gitti?",
+      "doneWhen": {
+        "unlocked": "location"
+      },
+      "easyText": "Terminal'de:  cd kanit_parca2  →  cat rota.txt  — sonra konum.enc'i çöz."
+    },
+    {
+      "act": 4,
+      "text": "Terminal'i aç; Zeynep şifreli kanaldan bağlandı. Şirketin ekranını izleyen programını durdur.",
+      "doneWhen": {
+        "flag": "mdmKilled"
+      },
+      "easyText": "Terminal'de 'ps' yaz; akcena-mdm-yedek'in PID numarasını 'kill' ile kapat."
+    },
+    {
+      "act": 4,
+      "text": "Zeynep üçüncü parçayı yolladı. Anahtarı: \"onların sana verdiği kod\".",
+      "doneWhen": {
+        "unlocked": "evidence3"
+      },
+      "easyText": "Üçüncü parçanın anahtarı görev çubuğunun sağ altındaki kırmızı kod."
+    },
+    {
+      "act": 4,
+      "text": "Üç parçayı tek dosyada birleştir.",
+      "doneWhen": {
+        "flag": "evidenceMerged"
+      },
+      "easyText": "Terminal'de 'birlestir' yaz."
+    },
+    {
+      "act": 4,
+      "text": "Kanıtları kime göndereceğine karar ver.",
+      "doneWhen": {
+        "flag": "act4Ending"
+      },
+      "easyText": "Kanıtları kime göndereceğine karar ver."
+    }
+  ]
+}

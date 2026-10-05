@@ -1,0 +1,105 @@
+{
+  "_aciklama": "Fotoğraflar uygulamasının içeriği. 'asset' alanı assets.json > images içindeki anahtardır. Tarih biçimi: YYYY-AA-GG (sıralama için).",
+  "photos": [
+    {
+      "id": "kas-son-gun",
+      "asset": "kas_sunset",
+      "caption": "Son gün. Gitmek istemiyorum 🌅",
+      "date": "2026-08-23",
+      "time": "19:51",
+      "location": "Kaş, Antalya",
+      "device": "Zeynep'in telefonu",
+      "album": "Tatil"
+    },
+    {
+      "id": "kas-tekne",
+      "asset": "kas_boat",
+      "caption": "Mavi o kadar mavi ki",
+      "date": "2026-08-20",
+      "time": "11:12",
+      "location": "Kaş, Antalya",
+      "device": "Zeynep'in telefonu",
+      "album": "Tatil"
+    },
+    {
+      "id": "beyaz-tahta",
+      "asset": "whiteboard",
+      "caption": "Bunu unutma.",
+      "date": "2026-09-19",
+      "time": "21:07",
+      "location": "Maslak, İstanbul",
+      "device": "Zeynep'in telefonu",
+      "album": "Ekran görüntüleri"
+    },
+    {
+      "id": "kahvalti",
+      "asset": "breakfast",
+      "caption": "Cumartesi kahvaltısı ekibi, eksiksiz 🥐",
+      "date": "2026-06-13",
+      "time": "10:34",
+      "location": "Moda, İstanbul",
+      "device": "Zeynep'in telefonu",
+      "album": "Arkadaşlar"
+    },
+    {
+      "id": "yeni-masa",
+      "asset": "office_desk",
+      "caption": "Yeni masa, yeni ben",
+      "date": "2026-02-03",
+      "time": "09:15",
+      "location": "Maslak, İstanbul",
+      "device": "Zeynep'in telefonu",
+      "album": "İş"
+    },
+    {
+      "id": "pamuk-3-yas",
+      "asset": "pamuk_three",
+      "caption": "Pamuk 3 yaşında!",
+      "date": "2025-03-14",
+      "time": "20:02",
+      "location": "Kadıköy, İstanbul",
+      "device": "Zeynep'in telefonu",
+      "album": "Pamuk"
+    },
+    {
+      "id": "bozcaada",
+      "asset": "bozcaada",
+      "caption": "Rüzgâr bizi uçuracak",
+      "date": "2025-07-12",
+      "time": "18:40",
+      "location": "Bozcaada, Çanakkale",
+      "device": "Zeynep'in telefonu",
+      "album": "Tatil"
+    },
+    {
+      "id": "gulhane-yagmur",
+      "asset": "rain_park",
+      "caption": "Hâlâ şemsiye almıyoruz ☔",
+      "date": "2024-04-13",
+      "time": "15:22",
+      "location": "Gülhane Parkı, İstanbul",
+      "device": "Zeynep'in telefonu",
+      "album": "Arkadaşlar"
+    },
+    {
+      "id": "pamuk-pasta",
+      "asset": "pamuk_cake",
+      "caption": "Doğum günün kutlu olsun Pamuk!",
+      "date": "2023-03-14",
+      "time": "19:42",
+      "location": "Kadıköy, İstanbul",
+      "device": "Zeynep'in telefonu",
+      "album": "Pamuk"
+    },
+    {
+      "id": "pamuk-uyku",
+      "asset": "pamuk_sleep",
+      "caption": "Klavyemi yatak sanıyor",
+      "date": "2024-11-02",
+      "time": "23:48",
+      "location": "Kadıköy, İstanbul",
+      "device": "Zeynep'in telefonu",
+      "album": "Pamuk"
+    }
+  ]
+}

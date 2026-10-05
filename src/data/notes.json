@@ -1,0 +1,36 @@
+{
+  "_aciklama": "Notlar uygulamasının içeriği. 'cipherText' alanı olan notlarda 'Çözücüye aktar' düğmesi çıkar. Tarih biçimi: YYYY-AA-GG.",
+  "notes": [
+    {
+      "id": "okuyorsan",
+      "title": "Eğer bunu okuyorsan",
+      "date": "2026-09-25",
+      "body": "Eğer bunu okuyorsan laptop sana ulaşmış demektir. Gülhane'yi hatırladığına sevindim.\n\nNe olduğunu buraya açık açık yazamam. Ama sen beni tanırsın: her şeyi, sadece senin bulabileceğin yerlere bıraktım.\n\nKimseye güvenme. Özellikle de kendine \"destek\" diyen birine.\n\n–Z"
+    },
+    {
+      "id": "sifreli",
+      "title": "Kilitli düşünce",
+      "date": "2026-09-24",
+      "cipherText": "duvly vliuhvl: vhvvlcoln",
+      "body": "duvly vliuhvl: vhvvlcoln\n\n(Anahtar: evin en küçüğünün yaşı.)"
+    },
+    {
+      "id": "pin",
+      "title": "Mesaj PIN'i",
+      "date": "2026-09-24",
+      "body": "Mesaj PIN'i: son tatilin plakası, iki kere."
+    },
+    {
+      "id": "akcena",
+      "title": "Akçena – kendime notlar",
+      "date": "2026-09-19",
+      "body": "HASAT\n— Her gece 03:00'te çalışıyor\n— Hedef: sftp.mavikule-veri (DIŞ sunucu!)\n— Tablolar: musteri_ana, odeme_gecmisi\n— Loglar 24 saatte siliniyor\n— Onay: M.K. ???\n\nEmre biliyor. Emin değilim ama biliyor."
+    },
+    {
+      "id": "market",
+      "title": "Market",
+      "date": "2026-09-12",
+      "body": "— Pamuk'a mama (somonlu olan!)\n— süt\n— kahve\n— pil (AA)\n— annemin ilacı"
+    }
+  ]
+}

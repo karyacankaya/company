@@ -1,0 +1,131 @@
+{
+  "_aciklama": "Mesajlar uygulamasının içeriği. 'from': 'me' Zeynep'in kendi mesajıdır; diğer değerler 'participants' içindeki kişilerdir. {\"day\": \"...\"} öğeleri gün ayırıcıdır. 'unread': sondaki kaç mesajın okunmamış olduğu.",
+  "conversations": [
+    {
+      "id": "grup",
+      "name": "Cumartesi Kahvaltıcıları 🥐",
+      "isGroup": true,
+      "avatar": { "initials": "🥐", "color": "#c9733c" },
+      "participants": {
+        "deniz": { "name": "Deniz", "color": "#f59e6b" },
+        "selin": { "name": "Selin", "color": "#9d8cff" },
+        "burak": { "name": "Burak", "color": "#5fd0a8" }
+      },
+      "unread": 5,
+      "messages": [
+        { "day": "17 Ağustos" },
+        { "from": "selin", "time": "21:04", "text": "Kaş fotoğraflarını bekliyoruz hanımefendi" },
+        { "from": "me", "time": "21:10", "text": "Geliyor geliyor! Pamuk'a annem bakıyor bu arada, sağ olsun 🙏" },
+        { "from": "deniz", "time": "21:11", "text": "Bana magnet getir 🧲" },
+        { "from": "burak", "time": "21:15", "text": "Bana da huzur getir, ofis cehennem" },
+        { "day": "13 Eylül" },
+        { "from": "deniz", "time": "10:02", "text": "Cumartesi kahvaltı? Moda'daki yer" },
+        { "from": "selin", "time": "10:05", "text": "Varım" },
+        { "from": "burak", "time": "10:06", "text": "Ben de" },
+        { "from": "me", "time": "10:31", "text": "Bu hafta olmaz ya, işte bir şeyler var" },
+        { "from": "deniz", "time": "10:32", "text": "Hep iş hep iş 🙄" },
+        { "from": "me", "time": "10:40", "text": "Anlatırım bir ara. Gerçekten anlatırım." },
+        { "day": "24 Eylül" },
+        { "from": "me", "time": "01:12", "text": "Bir şey sorcam. Biriniz bir şeyin çok yanlış olduğunu bilse ama söylerse her şeyini kaybedecek olsa ne yapardınız" },
+        { "from": "burak", "time": "01:15", "text": "Saat 1 Zeynep 😅 ne oldu" },
+        { "from": "selin", "time": "01:16", "text": "Söylerdim herhalde. Sen iyi misin?" },
+        { "from": "me", "time": "01:20", "text": "İyiyim. Boş verin. Uyuyun 💛" },
+        { "day": "29 Eylül" },
+        { "from": "deniz", "time": "12:47", "text": "Zeynep?? Telefonun kapalı" },
+        { "from": "selin", "time": "13:02", "text": "Annesi beni aradı, 4 gündür haber alamıyormuş" },
+        { "from": "burak", "time": "19:30", "text": "Evine gittim, kimse açmadı. Pamuk da yok." },
+        { "day": "3 Ekim" },
+        { "from": "deniz", "time": "17:20", "text": "Polise gittik. \"Kendi isteğiyle gitmiş olabilir\" diyorlar." },
+        { "from": "selin", "time": "23:41", "text": "Zeynep lütfen bir işaret ver. Sadece iyi olduğunu söyle." }
+      ]
+    },
+    {
+      "id": "anne",
+      "name": "Annem",
+      "isGroup": false,
+      "avatar": { "initials": "A", "color": "#e57b9b" },
+      "participants": {
+        "anne": { "name": "Annem", "color": "#e57b9b" }
+      },
+      "unread": 3,
+      "messages": [
+        { "day": "10 Eylül" },
+        { "from": "anne", "time": "18:22", "text": "Kızım pazar yemeğe geliyor musun" },
+        { "from": "me", "time": "18:40", "text": "Gelirim anneciğim 💛" },
+        { "from": "anne", "time": "18:41", "text": "Pamuk'u da getir, babanın canı sıkılıyor" },
+        { "day": "22 Eylül" },
+        { "from": "anne", "time": "21:15", "text": "Sesin telefonda bir garipti. İyi misin?" },
+        { "from": "me", "time": "21:30", "text": "İyiyim anne, iş yoğun sadece" },
+        { "from": "anne", "time": "21:31", "text": "Kendine dikkat et. Yemek ye." },
+        { "day": "24 Eylül" },
+        { "from": "me", "time": "23:58", "text": "Anne bir süre bana ulaşamazsan merak etme olur mu. Seni çok seviyorum." },
+        { "from": "anne", "time": "23:59", "text": "Ne demek ulaşamazsan?? Zeynep ara beni hemen" },
+        { "from": "anne", "time": "00:14", "text": "Zeynep" },
+        { "day": "27 Eylül" },
+        { "from": "anne", "time": "09:05", "text": "Kızım telefonun neden kapalı" },
+        { "from": "anne", "time": "16:48", "text": "Babanla evine gittik. Kapıyı çilingire açtırdık. Hiçbir şey yok, bavulun da yok." },
+        { "day": "1 Ekim" },
+        { "from": "anne", "time": "02:33", "text": "Ne olur bir haber ver. Mahvoldum burda kızım." }
+      ]
+    },
+    {
+      "id": "emre",
+      "name": "Emre Yalçın",
+      "subtitle": "Akçena · Backend",
+      "isGroup": false,
+      "avatar": { "initials": "EY", "color": "#5b8def" },
+      "participants": {
+        "emre": { "name": "Emre", "color": "#5b8def" }
+      },
+      "unread": 3,
+      "messages": [
+        { "day": "15 Eylül" },
+        { "from": "emre", "time": "10:42", "text": "Günaydın, sprint toplantısını 11'e çektiler" },
+        { "from": "me", "time": "10:43", "text": "Tamam 👍" },
+        { "day": "18 Eylül" },
+        { "from": "me", "time": "23:14", "text": "Emre uyanık mısın" },
+        { "from": "me", "time": "23:14", "text": "Prod'da HASAT diye bir cron job var. Her gece 03:00'te çalışıyor." },
+        { "from": "me", "time": "23:15", "text": "Müşteri tablosunu komple dışarı aktarıyor. TCKN, IBAN, harcama geçmişi. Hepsi." },
+        { "from": "emre", "time": "23:21", "text": "Raporlama içindir o, BI ekibinin" },
+        { "from": "me", "time": "23:22", "text": "Hedef sunucu bizim değil. sftp.mavikule-veri diye bir yer." },
+        { "from": "emre", "time": "23:30", "text": "..." },
+        { "from": "emre", "time": "23:31", "text": "Zeynep bunu kimseyle konuşma, tamam mı?" },
+        { "day": "19 Eylül" },
+        { "from": "emre", "time": "09:03", "text": "Dün gece yazdıklarını sil lütfen" },
+        { "from": "me", "time": "09:10", "text": "Sen biliyordun, değil mi?" },
+        { "from": "emre", "time": "09:24", "text": "Ben sadece söyleneni yapıyorum. Her şeyde Murat Bey'in imzası var." },
+        { "from": "me", "time": "09:25", "text": "Bu raporlama değil Emre. Müşterilerin verisini satıyorlar." },
+        { "day": "23 Eylül" },
+        { "from": "emre", "time": "18:31", "text": "Güvenlik ekibi bugün herkesin laptopunu soruyordu" },
+        { "from": "emre", "time": "18:31", "text": "O dosya hâlâ sende mi?" },
+        { "from": "me", "time": "18:40", "text": "Sildim." },
+        { "from": "emre", "time": "18:41", "text": "Dosyayı sildin mi? Çöpe bakarsın" },
+        { "from": "emre", "time": "18:41", "text": "Oradan da kurtarırlar, boşalt şunu" },
+        { "from": "me", "time": "18:52", "text": "Hallettim. Merak etme." },
+        { "day": "28 Eylül" },
+        { "from": "emre", "time": "14:10", "text": "Zeynep neredesin, 3 gündür işe gelmiyorsun" },
+        { "day": "2 Ekim" },
+        { "from": "emre", "time": "22:47", "text": "BT senin laptopunu arıyor. Bana da sordular." },
+        { "from": "emre", "time": "22:48", "text": "Ne yaptın?" }
+      ]
+    },
+    {
+      "id": "bilinmeyen",
+      "name": "+90 532 ••• •• 18",
+      "subtitle": "Rehberde kayıtlı değil",
+      "isGroup": false,
+      "avatar": { "initials": "?", "color": "#59617a" },
+      "participants": {
+        "bilinmeyen": { "name": "Bilinmeyen", "color": "#8a90a6" }
+      },
+      "unread": 3,
+      "messages": [
+        { "day": "30 Eylül" },
+        { "from": "bilinmeyen", "time": "11:00", "text": "Zeynep Hanım merhaba. Şirket ekipmanınızın iadesi gerekmektedir." },
+        { "from": "bilinmeyen", "time": "11:00", "text": "Konumunuzu paylaşırsanız size kurye gönderebiliriz." },
+        { "day": "3 Ekim" },
+        { "from": "bilinmeyen", "time": "03:00", "text": "Cihaz açıldığı anda bizim de haberimiz olacak." }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+/* ==================================================================
+   windows.css — Pencere görünümü
+   ================================================================== */
+.window {
+  position: absolute;
+  display: flex; flex-direction: column;
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  overflow: hidden;
+  backdrop-filter: blur(22px) saturate(130%);
+  min-width: 260px; min-height: 140px;
+}
+.window:not(.is-focused) { box-shadow: 0 14px 36px rgba(0, 0, 0, 0.45); }
+.window:not(.is-focused) .window__titlebar { color: var(--text-dim); }
+.window.is-dragging { opacity: 0.94; }
+
+.window__titlebar {
+  flex: none; height: 38px; display: flex; align-items: center; gap: 8px;
+  padding: 0 6px 0 12px; cursor: grab;
+  background: rgba(255, 255, 255, 0.025);
+  border-bottom: 1px solid var(--line);
+  touch-action: none;
+}
+.window.is-dragging .window__titlebar { cursor: grabbing; }
+.window__icon svg { width: 16px; height: 16px; display: block; color: var(--accent); }
+.window__title { flex: 1; font-size: 13px; font-weight: 500; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.window__close {
+  width: 28px; height: 28px; border-radius: 7px; border: 0; background: none;
+  display: grid; place-items: center; color: var(--text-dim); cursor: pointer;
+}
+.window__close:hover { background: var(--danger); color: #fff; }
+.window__close svg { width: 16px; height: 16px; }
+.window__body { flex: 1; min-height: 0; overflow: hidden; position: relative; }
+
+.window--locked .window__body { display: grid; place-items: center; }

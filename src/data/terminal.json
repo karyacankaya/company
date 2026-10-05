@@ -1,0 +1,191 @@
+{
+  "_aciklama": "Terminal uygulamasının sahte dosya sistemi. type: 'dir' (klasör), 'file' (metin), 'enc' (şifreli dosya). 'enc' dosyaları 'decrypt <dosya> <anahtar>' ile çözülür; anahtar puzzles.json'daki 'lockId' kilidiyle kontrol edilir. 'requires' alanı olan bir öğe, o kilit açılana kadar görünmez. 'event': dosya çözülünce yayınlanacak olay. 'reveal': çözülünce ekrana basılacak satırlar. 'requiresFlag': o bayrak açılana kadar görünmez. 'processes': ps/kill komutları için süreç listesi. 'channel': Zeynep'in şifreli kanaldan gelen mesaj blokları (olaylara bağlı, bir kez).",
+  "user": "zeynep",
+  "host": "pusula",
+  "welcome": [
+    "Pusula Terminal 4.2",
+    "",
+    "Merhaba. Bunu okuyorsan bağlantıyı kesmeyi başarmışım; artık ekranı göremezler.",
+    "Nereden başlayacağını bilmiyorsan:  ls  yaz, sonra  cat beni_oku.txt",
+    "Takılırsan:  ipucu   ·   Tüm komutlar:  yardim",
+    "–Z",
+    ""
+  ],
+  "fs": {
+    "type": "dir",
+    "children": {
+      "beni_oku.txt": {
+        "type": "file",
+        "content": "Hoş geldin.\n\nKanıtın ikinci parçasını (kanit_parca2.enc) İndirilenler klasörüne koydum.\nÇözmek için:\n\n    decrypt Indirilenler/kanit_parca2.enc <anahtar>\n\nAnahtar: Pamuk'un en sevdiği mama. Her market listemde yazar.\n\nKolaylık: Dosya adının ilk harflerini yazıp Tab'a basarsan gerisi tamamlanır.\n\n–Z"
+      },
+      "Indirilenler": {
+        "type": "dir",
+        "children": {
+          "kanit_parca2.enc": {
+            "type": "enc",
+            "lockId": "evidence2",
+            "size": "3,1 MB",
+            "reveal": [
+              "[OK] kanit_parca2.enc çözüldü",
+              "[OK] yeni klasör: kanit_parca2/",
+              "",
+              "Devam etmek için:  cd kanit_parca2   sonra   ls"
+            ]
+          },
+          "kanit_parca3.enc": {
+            "type": "enc",
+            "lockId": "evidence3",
+            "requiresFlag": "part3Received",
+            "size": "4,2 MB",
+            "reveal": [
+              "[OK] kanit_parca3.enc çözüldü",
+              "[OK] yeni klasör: kanit_parca3/",
+              "",
+              "İçine bak:  cat kanit_parca3/toplanti_dokumu.txt"
+            ]
+          }
+        }
+      },
+      "kanit_parca2": {
+        "type": "dir",
+        "requires": "evidence2",
+        "children": {
+          "hasat_cron.log": {
+            "type": "file",
+            "content": "2026-09-01 03:00:01 [HASAT] başladı — paket AKC-0901\n2026-09-01 03:04:12 [HASAT] 48.210 kayıt dışa aktarıldı (ad, tckn, telefon)\n2026-09-01 03:04:15 [HASAT] hedef: sftp.mavikule-veri.com — TAMAM\n2026-09-12 03:00:01 [HASAT] başladı — paket AKC-0912\n2026-09-12 03:07:40 [HASAT] 52.904 kayıt dışa aktarıldı (harcama geçmişi)\n2026-09-12 03:07:44 [HASAT] hedef: sftp.mavikule-veri.com — TAMAM\n2026-09-17 03:00:01 [HASAT] başladı — paket AKC-0917\n2026-09-17 03:02:58 [HASAT] 19.388 kayıt dışa aktarıldı (kredi skoru, adres)\n2026-09-17 03:03:02 [HASAT] hedef: sftp.mavikule-veri.com — TAMAM\n2026-09-17 03:03:03 [HASAT] log temizleme 24 saat sonra planlandı"
+          },
+          "sozlesme_ozeti.txt": {
+            "type": "file",
+            "content": "VERİ ORTAKLIĞI SÖZLEŞMESİ — MV-2291 (özet)\n\nTaraflar: Akçena Finans Teknolojileri A.Ş. — Mavikule Veri Hizmetleri Ltd.\nKonu: \"Anonimleştirilmiş\" müşteri verisinin aylık paketler halinde aktarımı\n\nMadde 4: Paketler maskesiz kimlik bilgisi içerebilir. (el yazısı not: \"anonim\" dedikleri bu)\nMadde 7: Sözleşme gizlidir; müşterilere bildirim yapılmaz.\n\nAkçena adına imza: M. Karataş (CTO)"
+          },
+          "rota.txt": {
+            "type": "file",
+            "content": "25 Eylül\n\nEsenler 07:30 → Ezine → Geyikli İskelesi → feribot (45 dk)\nPamuk çantada, sakin.\n\nKimsenin beni aramayacağı bir yer seçtim: seninle geçen yaz gittiğimiz,\nrüzgârından şapkamın iki kez denize uçtuğu ada.\n\nkonum.enc'in anahtarı o adanın adı:\n\n    decrypt konum.enc <adanın adı>"
+          },
+          "konum.enc": {
+            "type": "enc",
+            "lockId": "location",
+            "size": "2 KB",
+            "event": "terminal:locationFound",
+            "reveal": [
+              "[OK] konum.enc çözüldü",
+              "",
+              "Bozcaada. Rüzgârgülü Pansiyon, 3 numaralı oda.",
+              "",
+              "Üçüncü parça bende. Hepsi bir araya gelince,",
+              "kime göndereceğimize birlikte karar veririz.",
+              "Gel. Ama kimseye söyleme.",
+              "–Z"
+            ]
+          }
+        }
+      },
+      "Pamuk": {
+        "type": "dir",
+        "children": {
+          "asi_karti.txt": {
+            "type": "file",
+            "content": "Pamuk — aşı kartı\nKarma aşı: Eylül 2026 (YAPILMADI — gitmeden önce yetişmedi, özür dilerim Pamuk)\nKuduz: Mart 2026 ✓"
+          }
+        }
+      },
+      "kanit_parca3": {
+        "type": "dir",
+        "requires": "evidence3",
+        "children": {
+          "toplanti_dokumu.txt": {
+            "type": "file",
+            "content": "SES KAYDI DÖKÜMÜ — 22.09.2026, Akçena yönetim toplantısı\n(Zeynep'in telefonundan, masanın altından kaydedildi)\n\nM. Karataş: Mavikule tam profil istiyor. Maskesiz.\n(ses): Ama sözleşmede \"anonim\" yazıyor...\nM. Karataş: Kâğıt üstünde. Müşteriler fark etmez; fark etse de kimse okumaz o metinleri.\nM. Karataş: Bu çeyrek bu gelir lazım. Konuşan olursa onunla ben ilgilenirim.\n\n[kayıt sonu]"
+          }
+        }
+      },
+      "kanit_tam.zip": {
+        "type": "file",
+        "requiresFlag": "evidenceMerged",
+        "content": "kanit_tam.zip — 3 parça, 9,7 MB\n\n1. musteri_aktarim_eylul.png (arşiv)\n2. hasat_cron.log + sozlesme_ozeti.txt\n3. toplanti_dokumu.txt\n\nGöndermek için:  gonder"
+      }
+    }
+  },
+  "processes": [
+    {
+      "pid": 1,
+      "name": "pusula-init",
+      "kind": "system"
+    },
+    {
+      "pid": 214,
+      "name": "pencere-yoneticisi",
+      "kind": "system"
+    },
+    {
+      "pid": 388,
+      "name": "zeynep_koruma.sh",
+      "kind": "zeynep"
+    },
+    {
+      "pid": 902,
+      "name": "akcena-mdm-yedek",
+      "note": "ekran paylaşımı: AÇIK",
+      "kind": "target"
+    },
+    {
+      "pid": 1033,
+      "name": "terminal",
+      "kind": "self"
+    }
+  ],
+  "channel": [
+    {
+      "id": "z1",
+      "trigger": {
+        "event": "act:started",
+        "match": {
+          "act": 4
+        }
+      },
+      "lines": [
+        "[kanal] şifreli bağlantı kuruldu: z@bozcaada",
+        "Z: Benim. Konumu gördüler, biliyorum. Pansiyondan çıktım; şimdilik güvendeyim, Pamuk da yanımda.",
+        "Z: Ama ekranını hâlâ izliyorlar. Bilgisayarda onların bir programı çalışıyor.",
+        "Z: Çalışan programları görmek için 'ps' yaz. Şirketinkini 'kill <PID>' ile kapat."
+      ]
+    },
+    {
+      "id": "z2",
+      "trigger": {
+        "event": "terminal:mdmKilled"
+      },
+      "setFlag": "part3Received",
+      "lines": [
+        "Z: Tamam. Artık göremiyorlar.",
+        "Z: Üçüncü parçayı yolluyorum...",
+        "[kanal] dosya alındı: Indirilenler/kanit_parca3.enc",
+        "Z: Anahtarı buraya yazamam. İpucu: onların sana verdiği kod. Hâlâ ekranında bir yerde duruyor."
+      ]
+    },
+    {
+      "id": "z3",
+      "trigger": {
+        "event": "terminal:decrypted",
+        "match": {
+          "lockId": "evidence3"
+        }
+      },
+      "lines": [
+        "Z: Üç parça da sende: arşivdeki tablo, ikinci parça ve bu kayıt.",
+        "Z: 'birlestir' yaz; hepsini tek dosyada toplar."
+      ]
+    },
+    {
+      "id": "z4",
+      "trigger": {
+        "event": "evidence:merged"
+      },
+      "lines": [
+        "Z: Son karar senin. Kime gönderirsen gönder, arkandayım.",
+        "Z: Onlar da sana bir 'teklif' yapacaktır. Ne yapacağını sen bilirsin. –Z",
+        "(Gönderme penceresini tekrar açmak için: gonder)"
+      ]
+    }
+  ]
+}

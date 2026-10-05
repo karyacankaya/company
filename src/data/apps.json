@@ -1,0 +1,152 @@
+{
+  "_aciklama": "Masaüstündeki uygulamalar. 'renderer' = src/ui/apps/index.js içindeki çizici adı. 'lockId' = puzzles.json içindeki kilit (null ise kilitsiz). 'desktop': false olanlar masaüstünde simge olarak görünmez, başka yerden açılır. 'fromAct': uygulamanın hangi perdeden itibaren görüneceği (yoksa 1).",
+  "apps": [
+    {
+      "id": "photos",
+      "title": "Fotoğraflar",
+      "icon": "photos",
+      "color": [
+        "#f5a35c",
+        "#d9548a"
+      ],
+      "renderer": "photos",
+      "lockId": null,
+      "desktop": true,
+      "window": {
+        "width": 860,
+        "height": 560
+      }
+    },
+    {
+      "id": "messages",
+      "title": "Mesajlar",
+      "icon": "messages",
+      "color": [
+        "#4fd1a5",
+        "#2a8f9e"
+      ],
+      "renderer": "messages",
+      "lockId": "messages",
+      "desktop": true,
+      "window": {
+        "width": 880,
+        "height": 580
+      }
+    },
+    {
+      "id": "notes",
+      "title": "Notlar",
+      "icon": "notes",
+      "color": [
+        "#f3d266",
+        "#d79b2f"
+      ],
+      "renderer": "notes",
+      "lockId": "notes",
+      "desktop": true,
+      "window": {
+        "width": 820,
+        "height": 560
+      }
+    },
+    {
+      "id": "trash",
+      "title": "Çöp Kutusu",
+      "icon": "trash",
+      "color": [
+        "#8d97b5",
+        "#4c5470"
+      ],
+      "renderer": "trash",
+      "lockId": null,
+      "desktop": true,
+      "window": {
+        "width": 640,
+        "height": 400
+      }
+    },
+    {
+      "id": "cargoNote",
+      "title": "Kargo Notu",
+      "icon": "letter",
+      "color": [
+        "#e9dcc2",
+        "#b49b72"
+      ],
+      "renderer": "cargoNote",
+      "lockId": null,
+      "desktop": true,
+      "window": {
+        "width": 620,
+        "height": 560
+      }
+    },
+    {
+      "id": "archive",
+      "title": "arsiv.zip",
+      "icon": "archive",
+      "color": [
+        "#a58cff",
+        "#6a4fd6"
+      ],
+      "renderer": "archive",
+      "lockId": "archive",
+      "desktop": false,
+      "window": {
+        "width": 560,
+        "height": 360
+      }
+    },
+    {
+      "id": "browser",
+      "title": "Tarayıcı",
+      "icon": "browser",
+      "color": [
+        "#6aa8ff",
+        "#3a5bd9"
+      ],
+      "renderer": "browser",
+      "lockId": null,
+      "desktop": true,
+      "fromAct": 2,
+      "window": {
+        "width": 940,
+        "height": 600
+      }
+    },
+    {
+      "id": "email",
+      "title": "E-posta",
+      "icon": "mail",
+      "color": [
+        "#ff8f70",
+        "#d9485f"
+      ],
+      "renderer": "email",
+      "lockId": "email",
+      "desktop": true,
+      "fromAct": 2,
+      "window": {
+        "width": 980,
+        "height": 600
+      }
+    },
+    {
+      "id": "terminal",
+      "title": "Terminal",
+      "icon": "terminal",
+      "color": [
+        "#3b4256",
+        "#141824"
+      ],
+      "renderer": "terminal",
+      "lockId": null,
+      "desktop": true,
+      "fromAct": 3,
+      "window": {
+        "width": 760,
+        "height": 480
+      }
+    }
+  ]
+}

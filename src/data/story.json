@@ -1,0 +1,267 @@
+{
+  "gameDate": "2026-10-04",
+  "osName": "Pusula",
+  "osVersion": "4.2",
+  "user": {
+    "fullName": "Zeynep Arslan",
+    "initial": "Z",
+    "accountName": "zeynep"
+  },
+  "title": {
+    "name": "company",
+    "tagline": "Bazı sırlar sadece doğru kişiye açılır.",
+    "newGame": "Yeni oyun",
+    "continue": "Devam et",
+    "soundNote": "Kulaklıkla oynaman önerilir."
+  },
+  "intro": {
+    "lines": [
+      "Zeynep dokuz gündür kayıp.",
+      "Telefonu kapalı. Evinde kimse yok. Polis \"kendi isteğiyle gitmiş olabilir\" diyor.",
+      "Bu sabah kapına bir kargo bırakıldı. Gönderen kısmı boş.",
+      "Kutunun içinde Zeynep'in laptopu ve katlanmış bir kâğıt var."
+    ],
+    "parcel": {
+      "label": "KARGO",
+      "from": "Gönderen: —",
+      "to": "Alıcı: Sen",
+      "code": "TK-2609-4471"
+    },
+    "note": {
+      "text": "Şifre: ilk tanıştığımız yer.\nKimseye verme.",
+      "signature": "–Z"
+    },
+    "memoriesTitle": "Zeynep'le ortak anıların",
+    "memoriesIntro": "Kâğıdı elinde çevirirken aklından geçenler...",
+    "memories": [
+      {
+        "year": "2020",
+        "title": "Kadıköy'de bir konser",
+        "text": "Tanışmamızın üzerinden bir yıl geçmişti. Kadıköy'de, adını bile hatırlamadığımız bir grubun konserindeydik. Zeynep sahnenin dibinde, sesi kısılana kadar şarkı söyledi. Çıkışta ıslak kaldırımda oturup simit yedik; o gece beni ilk kez \"en yakın arkadaşım\" diye tanıttı."
+      },
+      {
+        "year": "2019",
+        "title": "Şemsiyesiz iki kişi",
+        "text": "Bir nisan cumartesisi, lalelere bakmak için Gülhane Parkı'na gitmiştim. Sağanak birden bastırdı. Kaçıp sığındığım ağacın altında, benim gibi şemsiyesiz, sırılsıklam bir kız vardı. \"Hava durumuna bakmak kimin aklına gelir ki?\" dedi gülerek. Adı Zeynep'ti. Yağmur dinene kadar konuştuk; dindiğinde artık yabancı değildik.",
+        "easyTitle": "İlk tanışmamız: şemsiyesiz iki kişi"
+      },
+      {
+        "year": "2025",
+        "title": "Bozcaada rüzgârı",
+        "text": "Geçen yaz Bozcaada'ya gittik. Rüzgâr o kadar sertti ki Zeynep'in şapkası iki kez denize uçtu. Akşamları sahilde oturup ileride ne yapacağımızı konuşurduk. O zaman bile işinden pek bahsetmezdi; \"sıkıcı şeyler\" derdi."
+      }
+    ],
+    "openLaptop": "Laptopu aç"
+  },
+  "bootLines": [
+    {
+      "text": "PUSULA FIRMWARE v4.2.118",
+      "kind": "plain"
+    },
+    {
+      "text": "Çekirdek yükleniyor...",
+      "kind": "plain"
+    },
+    {
+      "text": "Bellek denetimi: 16384 MB",
+      "kind": "ok"
+    },
+    {
+      "text": "Disk şifrelemesi etkin (AES-256)",
+      "kind": "ok"
+    },
+    {
+      "text": "Ağ arayüzü: bağlantı yok",
+      "kind": "ok"
+    },
+    {
+      "text": "Son oturum 9 gün önce kapatıldı",
+      "kind": "warn"
+    },
+    {
+      "text": "Cihaz yönetimi profili bulundu: AKCENA-MDM",
+      "kind": "warn"
+    },
+    {
+      "text": "Kullanıcı profili: zeynep",
+      "kind": "ok"
+    },
+    {
+      "text": "Masaüstü hazırlanıyor...",
+      "kind": "plain"
+    }
+  ],
+  "login": {
+    "placeholder": "Parola",
+    "rereadNote": "Notu tekrar oku",
+    "lockedText": "Bu cihaz kilitli."
+  },
+  "desktop": {
+    "welcomeHint": "İpucu: Simgeleri açmak için çift tıkla.",
+    "unreadNotification": {
+      "title": "Mesajlar",
+      "text": "{count} okunmamış mesaj"
+    },
+    "welcomeHintTouch": "İpucu: Simgeleri açmak için üstlerine dokun."
+  },
+  "acts": [
+    {
+      "id": 1,
+      "title": "Birinci Perde",
+      "endTrigger": "archive:screenshotViewed",
+      "endDelayMs": 2400,
+      "endCard": {
+        "heading": "1. PERDE SONU",
+        "text": "Birisi bu laptopu arıyor. Ve artık nerede olduğunu biliyor.",
+        "comingSoon": "Sırada 2. Perde: Baskı.",
+        "nextAct": 2,
+        "continue": "2. Perdeye başla",
+        "restart": "Baştan başla"
+      }
+    },
+    {
+      "id": 2,
+      "title": "İkinci Perde",
+      "endTrigger": "email:keyDraftRead",
+      "endDelayMs": 3500,
+      "endCard": {
+        "heading": "2. PERDE SONU",
+        "text": "Zeynep onların geleceğini biliyordu. Ve sana bir yol bıraktı.",
+        "comingSoon": "Sırada 3. Perde: İz.",
+        "nextAct": 3,
+        "restart": "Baştan başla",
+        "continue": "3. Perdeye başla"
+      }
+    },
+    {
+      "id": 3,
+      "title": "Üçüncü Perde",
+      "endTrigger": "terminal:locationFound",
+      "endDelayMs": 3500,
+      "endCard": {
+        "heading": "3. PERDE SONU",
+        "text": "Zeynep'in yerini buldun. Ne yazık ki sadece sen değil.",
+        "comingSoon": "Sırada son perde: Karar.",
+        "nextAct": 4,
+        "restart": "Baştan başla",
+        "continue": "Son perdeye başla"
+      }
+    },
+    {
+      "id": 4,
+      "title": "Dördüncü Perde",
+      "endTrigger": "evidence:sent",
+      "endDelayMs": 300
+    }
+  ],
+  "act2": {
+    "startNotifications": [
+      {
+        "title": "Ağ",
+        "text": "Bağlantı kuruldu: AKCENA-MDM (uzak yönetim)",
+        "icon": "wifi"
+      },
+      {
+        "title": "Pusula",
+        "text": "Yeni uygulamalar yüklendi: Tarayıcı, E-posta",
+        "icon": "info"
+      }
+    ],
+    "networkName": "AKCENA-MDM (uzak yönetim)"
+  },
+  "parcelCard": {
+    "fromAct": 2,
+    "prompt": "Kutuyu masadan kaldırırken altında bir şey hışırdadı...",
+    "button": "Kutuyu incele",
+    "found": "Kutunun kapağına bantlanmış küçük bir güvenlik kartı:",
+    "card": {
+      "brand": "PostaKuş",
+      "title": "Güvenlik Kartı",
+      "number": "No: ****-7731",
+      "columns": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "rows": [
+        [
+          7,
+          3,
+          5,
+          6,
+          4
+        ],
+        [
+          2,
+          8,
+          6,
+          4,
+          5
+        ],
+        [
+          9,
+          1,
+          4,
+          3,
+          8
+        ],
+        [
+          5,
+          6,
+          2,
+          9,
+          3
+        ],
+        [
+          1,
+          7,
+          9,
+          2,
+          6
+        ]
+      ],
+      "backNote": "Bunu kimseye gösterme.\nSadece sende olsun.\n–Z"
+    }
+  },
+  "act3": {
+    "startNotifications": [
+      {
+        "title": "Pusula",
+        "text": "Yeni uygulama: Terminal",
+        "icon": "terminal"
+      },
+      {
+        "title": "zeynep_koruma",
+        "text": "Bağlantı kesik. Artık güvendesin. Terminal'i aç. –Z",
+        "icon": "lock"
+      }
+    ]
+  },
+  "act4": {
+    "startNotifications": [
+      {
+        "title": "zeynep_koruma",
+        "text": "Şifreli kanal açıldı: z@bozcaada. Terminal'e bak.",
+        "icon": "terminal"
+      }
+    ]
+  },
+  "difficulty": {
+    "label": "Zorluk",
+    "options": [
+      {
+        "id": "easy",
+        "name": "Kolay",
+        "detail": "İpuçları hemen gelir, kilit ekranları nereye bakacağını söyler."
+      },
+      {
+        "id": "normal",
+        "name": "Normal",
+        "detail": "İpuçları biraz bekletir; biraz düşünmen gerekir."
+      }
+    ],
+    "changedNotification": "Zorluk: {name}"
+  }
+}

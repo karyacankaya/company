@@ -1,0 +1,26 @@
+{
+  "_aciklama": "TÜM görsel ve ses yolları burada. Gerçek bir fotoğraf eklemek için dosyayı public/images/ içine koy ve ilgili 'src' alanını doldur (ör. \"images/pamuk_cake.jpg\"). 'src' null olduğu sürece renkli bir yer tutucu kutu gösterilir; 'placeholder' alanı o kutunun renklerini, simgesini ve neyi temsil ettiğini anlatır.",
+  "images": {
+    "kas_sunset":   { "src": "images/kastagunbatimi.png", "placeholder": { "colors": ["#ff9a5a", "#7b3fa0"], "emoji": "🌅", "label": "Kaş'ta gün batımı, deniz" } },
+    "kas_boat":     { "src": "images/tekne.jpg", "placeholder": { "colors": ["#3ec6e0", "#1a5fa0"], "emoji": "⛵", "label": "Kaş, tekne turu, turkuaz deniz" } },
+    "whiteboard":   { "src": "images/hasat.png", "placeholder": { "colors": ["#d9dde6", "#8b93a7"], "emoji": "📋", "label": "Bulanık beyaz tahta: \"HASAT → Mavikule ??\"" } },
+    "breakfast":    { "src": "images/kahvalti.jpeg", "placeholder": { "colors": ["#f6c26b", "#c9733c"], "emoji": "🥐", "label": "Dört arkadaş, kahvaltı masası" } },
+    "office_desk":  { "src": "images/ofis.jpg", "placeholder": { "colors": ["#5c6b8a", "#252c3d"], "emoji": "💻", "label": "Ofiste yeni masa, iki monitör" } },
+    "pamuk_three":  { "src": "images/partyhat.jpg", "placeholder": { "colors": ["#fbe3ec", "#d98fae"], "emoji": "🐈", "label": "Beyaz kedi Pamuk, başında parti şapkası" } },
+    "bozcaada":     { "src": "images/sapka.jpeg", "placeholder": { "colors": ["#9fd8e8", "#4b8fb3"], "emoji": "🌬️", "label": "Bozcaada, rüzgârlı sahil, uçan şapka" } },
+    "rain_park":    { "src": "images/lale.jpg", "placeholder": { "colors": ["#7f9c86", "#2f4a3e"], "emoji": "🌧️", "label": "Yağmurlu park, ıslak laleler" } },
+    "pamuk_cake":   { "src": "images/dogumg.jpg", "placeholder": { "colors": ["#ffd1dc", "#f08bb0"], "emoji": "🎂", "label": "Pamuk ve önünde mumlu küçük pasta" } },
+    "pamuk_sleep":  { "src": "images/klavye.jpg", "placeholder": { "colors": ["#c9c3e6", "#6e66a8"], "emoji": "😴", "label": "Pamuk klavyenin üstünde uyuyor" } },
+    "archive_screenshot": { "src": null, "placeholder": null }
+  },
+  "sounds": {
+    "click":   { "src": "sounds/click.wav",   "volume": 0.45 },
+    "key":     { "src": "sounds/key.wav",     "volume": 0.35 },
+    "notify":  { "src": "sounds/notify.wav",  "volume": 0.5 },
+    "message": { "src": "sounds/message.wav", "volume": 0.4 },
+    "unlock":  { "src": "sounds/unlock.wav",  "volume": 0.55 },
+    "error":   { "src": "sounds/error.wav",   "volume": 0.45 },
+    "glitch":  { "src": "sounds/glitch.wav",  "volume": 0.5 },
+    "boot":    { "src": "sounds/boot.wav",    "volume": 0.6 }
+  }
+}

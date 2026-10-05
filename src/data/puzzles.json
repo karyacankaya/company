@@ -1,0 +1,296 @@
+{
+  "_aciklama": "Tüm kilitler/şifreler burada. Cevaplar büyük/küçük harf, Türkçe karakter, boşluk ve noktalama farkı gözetmeden karşılaştırılır (bkz. src/engine/text.js). 'hints' listesindeki her ipucu, 'after' kadar yanlış denemeden sonra görünür. type: 'chain' olan kilit birden fazla adımdan oluşur; 'steps' listesindeki kilitler sırayla açılır. 'easy' bölümü, Kolay zorlukta kilidin alanlarının (subtitle, hints...) yerine geçer.",
+  "locks": {
+    "login": {
+      "type": "text",
+      "answers": [
+        "gulhane",
+        "gulhaneparki",
+        "gulhanepark"
+      ],
+      "title": "Zeynep Arslan",
+      "subtitle": null,
+      "hints": [
+        {
+          "after": 2,
+          "text": "Notta \"ilk tanıştığımız yer\" yazıyor. Anılardan hangisi bir ilk?"
+        },
+        {
+          "after": 4,
+          "text": "İlk tanışma Gülhane Parkı'nda. Parola: gulhane"
+        }
+      ],
+      "easy": {
+        "hints": [
+          {
+            "after": 1,
+            "text": "Kargo notunda \"ilk tanıştığımız yer\" yazıyor. Anılardan \"İlk tanışmamız\" başlıklı olana bak."
+          },
+          {
+            "after": 2,
+            "text": "İlk tanışma Gülhane Parkı'nda. Parola: gulhane"
+          }
+        ]
+      }
+    },
+    "notes": {
+      "type": "text",
+      "answers": [
+        "pamuk1403",
+        "pamuk14032023",
+        "1403pamuk",
+        "pamuk143"
+      ],
+      "title": "Notlar kilitli",
+      "subtitle": "Parola ipucu: Pamuk'un doğum günü 🐾🎂",
+      "hints": [
+        {
+          "after": 2,
+          "text": "Pamuk + doğum günü. Fotoğraflar'da Pamuk'un pastalı bir fotoğrafı var; bilgilerine bak."
+        },
+        {
+          "after": 4,
+          "text": "Doğum günü 14 Mart. Parola: pamuk1403"
+        }
+      ],
+      "easy": {
+        "subtitle": "Parola ipucu: kedimin adı + doğum günü (gün ay)\nÖrnek biçim: isim0101 — Fotoğraflar'a bak",
+        "hints": [
+          {
+            "after": 1,
+            "text": "Kedinin adı Pamuk. Fotoğraflar'da \"Doğum günün kutlu olsun Pamuk!\" fotoğrafını aç, tarihine bak."
+          },
+          {
+            "after": 2,
+            "text": "Doğum günü 14 Mart. Parola: pamuk1403"
+          }
+        ]
+      }
+    },
+    "messages": {
+      "type": "pin",
+      "length": 4,
+      "answers": [
+        "0707"
+      ],
+      "title": "Mesajlar kilitli",
+      "subtitle": "4 haneli PIN gir",
+      "hints": [
+        {
+          "after": 2,
+          "text": "Notlar'da PIN hakkında bir not var. Son tatilin nerede olduğunu Fotoğraflar söyler."
+        },
+        {
+          "after": 4,
+          "text": "Antalya = 07. PIN: 0707"
+        }
+      ],
+      "easy": {
+        "subtitle": "4 haneli PIN\nİpucu Notlar'daki \"Mesaj PIN'i\" notunda",
+        "hints": [
+          {
+            "after": 1,
+            "text": "Son tatil Kaş, Antalya. Antalya'nın plaka kodunu iki kez yan yana yaz."
+          },
+          {
+            "after": 2,
+            "text": "Antalya = 07. PIN: 0707"
+          }
+        ]
+      }
+    },
+    "archive": {
+      "type": "text",
+      "answers": [
+        "sessizlik"
+      ],
+      "title": "arsiv.zip şifreli",
+      "subtitle": "arsiv.zip şifreli",
+      "hints": [
+        {
+          "after": 2,
+          "text": "Notlar'daki anlamsız görünen not aslında şifreli. Çözücüyü dene; kaydırma sayısı bir fotoğrafta saklı."
+        },
+        {
+          "after": 4,
+          "text": "Çözülen not: \"arsiv sifresi: sessizlik\". Parola: sessizlik"
+        }
+      ],
+      "easy": {
+        "subtitle": "Parola, Notlar'daki \"Kilitli düşünce\" notunda gizli.\nNotu Çözücü'ye aktar, 3 kaydır.",
+        "hints": [
+          {
+            "after": 1,
+            "text": "Notlar → \"Kilitli düşünce\" → \"Çözücüye aktar\" → + düğmesine 3 kez bas."
+          },
+          {
+            "after": 2,
+            "text": "Çözülen not: \"arsiv sifresi: sessizlik\". Parola: sessizlik"
+          }
+        ]
+      }
+    },
+    "email": {
+      "type": "chain",
+      "steps": [
+        "emailPassword",
+        "emailCard"
+      ]
+    },
+    "emailPassword": {
+      "type": "text",
+      "answers": [
+        "yagmur",
+        "rumgay"
+      ],
+      "title": "PostaKuş",
+      "subtitle": "zeynep.arslan@postakus.net\nParola ipucu: son gece aradıklarımın baş harfleri",
+      "stepLabel": "Adım 1 / 2",
+      "hints": [
+        {
+          "after": 2,
+          "text": "Tarayıcı geçmişinde 24 Eylül gecesine bak. Vurgulu harfleri doğru sırayla oku."
+        },
+        {
+          "after": 4,
+          "text": "Harfler: Y-A-G-M-U-R. Parola: yagmur"
+        }
+      ],
+      "easy": {
+        "subtitle": "zeynep.arslan@postakus.net\nParola ipucu: Tarayıcı → Geçmiş → 24 Eylül gecesi.\nTuruncu baş harfleri aşağıdan yukarı oku (6 harf).",
+        "hints": [
+          {
+            "after": 1,
+            "text": "Tarayıcı'da 24 Eylül 23:00 sonrası aramaların turuncu baş harflerini en alttan başlayarak oku."
+          },
+          {
+            "after": 2,
+            "text": "Harfler: Y-A-G-M-U-R. Parola: yagmur"
+          }
+        ]
+      }
+    },
+    "emailCard": {
+      "type": "pin",
+      "length": 4,
+      "answers": [
+        "8976"
+      ],
+      "title": "İki adımlı doğrulama",
+      "subtitle": "Güvenlik kartındaki şu hücreleri sırayla gir:\nB2 · D4 · A1 · E5",
+      "stepLabel": "Adım 2 / 2",
+      "hints": [
+        {
+          "after": 2,
+          "text": "Zeynep kartı bilgisayarda saklamazdı. Kargo kutusuna bir daha bak."
+        },
+        {
+          "after": 4,
+          "text": "B2=8, D4=9, A1=7, E5=6. Kod: 8976"
+        }
+      ],
+      "easy": {
+        "subtitle": "Güvenlik kartındaki şu hücreleri sırayla gir:\nB2 · D4 · A1 · E5\nKart, Kargo Notu'nda → \"Kutuyu incele\"",
+        "hints": [
+          {
+            "after": 1,
+            "text": "Masaüstünde Kargo Notu'nu aç, \"Kutuyu incele\"ye bas. B sütunu 2. satır, D sütunu 4. satır..."
+          },
+          {
+            "after": 2,
+            "text": "B2=8, D4=9, A1=7, E5=6. Kod: 8976"
+          }
+        ]
+      }
+    },
+    "evidence2": {
+      "type": "text",
+      "answers": [
+        "somon",
+        "somonlu",
+        "somonluolan"
+      ],
+      "title": "kanit_parca2.enc",
+      "hints": [
+        {
+          "after": 2,
+          "text": "Pamuk'un en sevdiği mama ne? Zeynep'in alışveriş listelerine bak."
+        },
+        {
+          "after": 4,
+          "text": "Anahtar: somon. Yaz: decrypt Indirilenler/kanit_parca2.enc somon"
+        }
+      ],
+      "easy": {
+        "hints": [
+          {
+            "after": 1,
+            "text": "Anahtar Pamuk'un en sevdiği mama. Notlar → Market notunda yazıyor."
+          },
+          {
+            "after": 2,
+            "text": "Anahtar: somon. Yaz: decrypt Indirilenler/kanit_parca2.enc somon"
+          }
+        ]
+      }
+    },
+    "location": {
+      "type": "text",
+      "answers": [
+        "bozcaada"
+      ],
+      "title": "konum.enc",
+      "hints": [
+        {
+          "after": 2,
+          "text": "Rüzgâr, uçan şapka, feribot... Bu adaya birlikte gitmiştiniz."
+        },
+        {
+          "after": 4,
+          "text": "Yaz: decrypt kanit_parca2/konum.enc bozcaada"
+        }
+      ],
+      "easy": {
+        "hints": [
+          {
+            "after": 1,
+            "text": "Anılarından Bozcaada olanı hatırla: rüzgâr, uçan şapka..."
+          },
+          {
+            "after": 2,
+            "text": "Yaz: decrypt kanit_parca2/konum.enc bozcaada"
+          }
+        ]
+      }
+    },
+    "evidence3": {
+      "type": "text",
+      "answers": [
+        "481290"
+      ],
+      "title": "kanit_parca3.enc",
+      "hints": [
+        {
+          "after": 2,
+          "text": "\"Onların sana verdiği kod\": BT Destek ilk günden beri bir kod istiyor. Ekranın sağ altına bak."
+        },
+        {
+          "after": 4,
+          "text": "Kod 481 290. Yaz: decrypt Indirilenler/kanit_parca3.enc 481290"
+        }
+      ],
+      "easy": {
+        "hints": [
+          {
+            "after": 1,
+            "text": "Anahtar, görev çubuğunun sağ altındaki kırmızı kod."
+          },
+          {
+            "after": 2,
+            "text": "Yaz: decrypt Indirilenler/kanit_parca3.enc 481290"
+          }
+        ]
+      }
+    }
+  }
+}

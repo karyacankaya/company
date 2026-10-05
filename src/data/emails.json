@@ -1,0 +1,184 @@
+{
+  "_aciklama": "E-posta uygulamasının içeriği. folder: inbox | sent | drafts. 'event' alanı olan bir ileti açılınca o olay yayınlanır (ör. perde sonunu tetiklemek için). Ekler (attachments) tıklanınca 'message' gösterilir.",
+  "account": "zeynep.arslan@postakus.net",
+  "folders": [
+    {
+      "id": "inbox",
+      "title": "Gelen Kutusu"
+    },
+    {
+      "id": "sent",
+      "title": "Gönderilenler"
+    },
+    {
+      "id": "drafts",
+      "title": "Taslaklar"
+    }
+  ],
+  "emails": [
+    {
+      "id": "guvenlik-uyari",
+      "folder": "inbox",
+      "unread": true,
+      "from": {
+        "name": "PostaKuş Güvenlik",
+        "address": "guvenlik@postakus.net"
+      },
+      "to": "zeynep.arslan@postakus.net",
+      "date": "2026-10-03",
+      "time": "03:00",
+      "subject": "Hesabınıza yeni bir giriş denemesi",
+      "body": "Merhaba Zeynep,\n\nHesabınıza aşağıdaki cihazdan giriş denendi:\n\nCihaz: AKCENA-MDM-07\nKonum: Maslak, İstanbul\nSaat: 03.10.2026 02:58\n\nİki adımlı doğrulama sayesinde giriş ENGELLENDİ.\n\nBu siz değilseniz parolanızı değiştirmenizi öneririz.\n\nPostaKuş Güvenlik Ekibi"
+    },
+    {
+      "id": "ik",
+      "folder": "inbox",
+      "unread": true,
+      "from": {
+        "name": "Akçena İnsan Kaynakları",
+        "address": "ik@akcena.com.tr"
+      },
+      "to": "zeynep.arslan@postakus.net",
+      "date": "2026-10-01",
+      "time": "10:15",
+      "subject": "İş akdinizin askıya alınması hk.",
+      "body": "Sayın Zeynep Arslan,\n\n25.09.2026 tarihinden bu yana mazeretsiz olarak işe gelmediğiniz tespit edilmiştir.\n\nŞirketimize ait AKC-LT-0412 envanter numaralı dizüstü bilgisayarın en geç 05.10.2026 tarihine kadar iade edilmesi gerekmektedir. Aksi halde gizlilik sözleşmenizin 7. maddesi uyarınca yasal süreç başlatılacaktır.\n\nBilgilerinize sunarız.\n\nAkçena Finans Teknolojileri A.Ş.\nİnsan Kaynakları Direktörlüğü"
+    },
+    {
+      "id": "defne",
+      "folder": "inbox",
+      "unread": true,
+      "from": {
+        "name": "Defne Aksoy",
+        "address": "defne.aksoy@acikkayit.com.tr"
+      },
+      "to": "zeynep.arslan@postakus.net",
+      "date": "2026-09-27",
+      "time": "11:42",
+      "subject": "RE: Görüşme talebi",
+      "body": "Zeynep Hanım merhaba,\n\nE-postanızı aldım ve çok ciddiye alıyorum. Ancak belgeleri görmeden ve doğrulamadan bir şey yazamam.\n\nKimliğinizi koruyacağıma söz veriyorum. Güvenli bir kanaldan, iş cihazınızı kullanmadan bana tekrar ulaşın.\n\nDefne Aksoy\nAçık Kayıt"
+    },
+    {
+      "id": "murat",
+      "folder": "inbox",
+      "unread": false,
+      "from": {
+        "name": "Murat Karataş",
+        "address": "m.karatas@akcena.com.tr"
+      },
+      "to": "zeynep.arslan@postakus.net",
+      "date": "2026-09-24",
+      "time": "21:12",
+      "subject": "HASAT hk.",
+      "body": "Zeynep,\n\nProd log'larına erişim kayıtlarını gördüm. Kişisel adresine yazıyorum çünkü bu konuyu şirket sistemlerinde konuşmak istemiyorum.\n\nBunu bir yanlış anlama olarak kabul etmeye hazırım. Yarın 09:00'da odama gel.\n\nKimseyle konuşmadığını varsayıyorum. Kariyerin için de en doğrusu bu olur.\n\nMK"
+    },
+    {
+      "id": "kargo",
+      "folder": "inbox",
+      "unread": false,
+      "from": {
+        "name": "Kuşkanadı Kargo",
+        "address": "bilgi@kuskanadi.com"
+      },
+      "to": "zeynep.arslan@postakus.net",
+      "date": "2026-09-24",
+      "time": "18:06",
+      "subject": "Gönderiniz oluşturuldu: TK-2609-4471",
+      "body": "Gönderiniz başarıyla oluşturuldu.\n\nTakip no: TK-2609-4471\nİçerik beyanı: Dizüstü bilgisayar (1), not (1), kart (1)\nTeslimat: 3-10 iş günü\n\nBizi tercih ettiğiniz için teşekkür ederiz.\nKuşkanadı Kargo"
+    },
+    {
+      "id": "mavikule-fwd",
+      "folder": "inbox",
+      "unread": false,
+      "starred": true,
+      "from": {
+        "name": "Zeynep Arslan (iş)",
+        "address": "zeynep.arslan@akcena.com.tr"
+      },
+      "to": "zeynep.arslan@postakus.net",
+      "date": "2026-09-19",
+      "time": "23:58",
+      "subject": "Fwd: AKC-0917 teslim onayı",
+      "body": "(kendime — silinmeden önce)\n\n---------- İletilen ileti ----------\nKimden: ops@mavikule-veri.com\nKime: hasat-bot@akcena.com.tr\nTarih: 19.09.2026 08:14\nKonu: AKC-0917 teslim onayı\n\nPaket alındı: 19.388 kayıt (kredi skoru, adres).\nÖdeme her zamanki hesaba (••••3391) yapılmıştır.\n\nBir sonraki paket 'tam profil' olsun; müşterimiz maskesiz veri istiyor. Fiyat konusunda M.K. ile anlaştık.\n\nMavikule Operasyon"
+    },
+    {
+      "id": "veteriner",
+      "folder": "inbox",
+      "unread": false,
+      "from": {
+        "name": "Pati Dostu Veteriner Kliniği",
+        "address": "randevu@patidostu.vet"
+      },
+      "to": "zeynep.arslan@postakus.net",
+      "date": "2026-09-12",
+      "time": "09:00",
+      "subject": "Pamuk için aşı hatırlatması 🐾",
+      "body": "Merhaba,\n\nPamuk'un yıllık karma aşısının zamanı geldi. Randevu için bizi arayabilirsiniz.\n\nSevgiler,\nPati Dostu"
+    },
+    {
+      "id": "tekne",
+      "folder": "inbox",
+      "unread": false,
+      "from": {
+        "name": "Mavi Yol Tekne Turları",
+        "address": "rezervasyon@maviyol-kas.com"
+      },
+      "to": "zeynep.arslan@postakus.net",
+      "date": "2026-08-15",
+      "time": "16:30",
+      "subject": "Rezervasyon onayı — 20 Ağustos tekne turu",
+      "body": "Sayın Zeynep Arslan,\n\n20.08.2026 tarihli 'Kaş — Kekova' günlük tekne turu rezervasyonunuz (2 kişi) onaylanmıştır.\n\nKalkış: Kaş Limanı, 10:00\n\nİyi tatiller!"
+    },
+    {
+      "id": "defne-ilk",
+      "folder": "sent",
+      "unread": false,
+      "from": {
+        "name": "Zeynep Arslan",
+        "address": "zeynep.arslan@postakus.net"
+      },
+      "to": "defne.aksoy@acikkayit.com.tr",
+      "date": "2026-09-24",
+      "time": "23:52",
+      "subject": "Görüşme talebi",
+      "body": "Defne Hanım merhaba,\n\nYazılarınızı uzun zamandır takip ediyorum. Çalıştığım şirketin müşteri verilerini yurt dışındaki bir veri aracısına sattığına dair belgelerim var.\n\nKimliğimi koruyabilir misiniz? Yakında, güvenli bir şekilde tekrar yazacağım.\n\nZ."
+    },
+    {
+      "id": "kurul-taslak",
+      "folder": "drafts",
+      "unread": false,
+      "from": {
+        "name": "Zeynep Arslan",
+        "address": "zeynep.arslan@postakus.net"
+      },
+      "to": "ihbar@kvdk-kurul.org",
+      "date": "2026-09-24",
+      "time": "22:47",
+      "subject": "İhbar — Akçena Finans Teknolojileri",
+      "body": "Sayın Kişisel Veri Denetim Kurulu,\n\nAkçena Finans Teknolojileri A.Ş.'de yazılım geliştirici olarak çalışıyorum. Şirketin, müşterilerinin kişisel ve finansal verilerini rızaları dışında\n\n(yarım kalmış)"
+    },
+    {
+      "id": "sana",
+      "folder": "drafts",
+      "unread": false,
+      "important": true,
+      "event": "email:keyDraftRead",
+      "from": {
+        "name": "Zeynep Arslan",
+        "address": "zeynep.arslan@postakus.net"
+      },
+      "to": "(alıcı yok)",
+      "date": "2026-09-25",
+      "time": "05:40",
+      "subject": "Sana",
+      "body": "Eğer bunu okuyorsan, sadece senin bilebileceğin her şeyi bildin demektir. Gülhane'yi, Pamuk'u, o geceyi.\n\nKısaca anlatayım: Akçena, müşterilerinin verilerini Mavikule diye bir firmaya satıyor. Bunu kanıtlayan belgeleri üç parçaya böldüm.\n\nBirincisi arşivdeydi; onu gördün.\nİkincisi bu taslağın ekinde. Şifreli. Açmak için terminale ihtiyacın olacak; gerisini orada anlatıyorum.\nÜçüncüsü bende. Nerede olduğumu bulursan, onunla ne yapacağımıza birlikte karar veririz.\n\nOnlar da arıyor. Acele et ama dikkatli ol. Kimseye kod verme.\n\n–Z",
+      "attachments": [
+        {
+          "name": "kanit_parca2.enc",
+          "size": "3,1 MB",
+          "message": "Bu dosya şifrelenmiş (.enc). Bir kopyası Terminal'de, İndirilenler klasöründe."
+        }
+      ]
+    }
+  ]
+}

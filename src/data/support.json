@@ -1,0 +1,534 @@
+{
+  "_aciklama": "BT Destek sohbetinin bütün senaryosu. 'intro' 1. Perde sonunda oynar. 'beats' (vuruşlar) belirli olaylar olunca BİR KEZ gelir: trigger.event = olay adı, trigger.match = olayın içeriğinde aranacak alanlar, trigger.afterSeconds = perde başladıktan kaç saniye sonra. 'skipIfUnlocked' = o kilit açıksa bu vuruş hiç gelmez. 'choices' = oyuncunun cevap seçenekleri; seçimler kaydedilir (4. Perde'deki sonlar için). 'action' = seçilince arayüzde çalışacak özel olay.",
+  "windowTitle": "Akçena BT Destek — Canlı Yardım",
+  "agentName": "Kaan · BT Destek",
+  "agentStatus": "çevrimiçi",
+  "agentStatusOffline": "bağlantı yok",
+  "remoteCode": "481 290",
+  "remoteCodeNotification": {
+    "title": "Uzak Erişim",
+    "text": "Uzak erişim kodu: 481 290"
+  },
+  "hijackWindowTitle": "Uzak oturum",
+  "hijackWindowText": "Uzak oturum başlatılıyor...",
+  "inputPlaceholder": "Uzak erişim kodu...",
+  "waitingPlaceholder": "Karşı taraf yazıyor olabilir...",
+  "offlinePlaceholder": "Bağlantı sonlandırıldı.",
+  "blockedLabel": "Gönderilemedi",
+  "reopenNotification": {
+    "title": "BT Destek",
+    "text": "Yeni mesaj — pencere yeniden açıldı"
+  },
+  "intro": [
+    {
+      "text": "Merhaba. Ben Akçena BT Destek biriminden Kaan.",
+      "delay": 600
+    },
+    {
+      "text": "Bu cihaz şirket envanterimize kayıtlı ve 9 gündür çevrimdışıydı.",
+      "delay": 900
+    },
+    {
+      "text": "Az önce cihazda şifreli bir arşive erişildiğini tespit ettik.",
+      "delay": 900
+    },
+    {
+      "text": "Güvenliğiniz için cihazı uzaktan kontrol etmemiz gerekiyor. Ekranınızın sağ altında 6 haneli bir uzak erişim kodu görünüyor olmalı.",
+      "delay": 1200
+    },
+    {
+      "text": "Lütfen o kodu bu pencereye yazın.",
+      "delay": 700
+    },
+    {
+      "text": "Zeynep Hanım?",
+      "delay": 1600
+    },
+    {
+      "text": "...Siz Zeynep Hanım değilsiniz, değil mi?",
+      "delay": 1400
+    }
+  ],
+  "beats": [
+    {
+      "id": "a2-start",
+      "act": 2,
+      "trigger": {
+        "event": "act:started",
+        "match": {
+          "act": 2
+        }
+      },
+      "messages": [
+        {
+          "text": "Cihazın ağ bağlantısını uzaktan açtık. Artık ekranınızı görebiliyoruz.",
+          "delay": 1200
+        },
+        {
+          "text": "Size kolaylık sağlamak istiyoruz: kodu yazın, cihazı teslim alalım, herkes evine dönsün.",
+          "delay": 1400
+        }
+      ],
+      "choices": [
+        {
+          "id": "who",
+          "text": "Sen kimsin? Gerçekten BT'den misin?",
+          "reply": [
+            {
+              "text": "Elbette. Akçena Finans Teknolojileri, Bilgi Güvenliği Birimi.",
+              "delay": 900
+            },
+            {
+              "text": "Asıl soru şu: siz kimsiniz ve şirket malı bir cihazda ne arıyorsunuz?",
+              "delay": 1100
+            }
+          ]
+        },
+        {
+          "id": "where",
+          "text": "Zeynep nerede?",
+          "reply": [
+            {
+              "text": "Biz de onu soruyoruz.",
+              "delay": 800
+            },
+            {
+              "text": "Size bir şey söyledi mi? Söylediyse bize anlatmanız herkes için iyi olur.",
+              "delay": 1200
+            }
+          ]
+        },
+        {
+          "id": "give",
+          "text": "Peki. Kod: 481 290",
+          "blocked": true,
+          "action": "blockRemoteCode",
+          "reply": [
+            {
+              "text": "...Kod bize ulaşmadı.",
+              "delay": 900
+            },
+            {
+              "text": "Cihazda bir şey çalışıyor. Ne yaptınız?",
+              "delay": 1100
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "a2-browser",
+      "act": 2,
+      "trigger": {
+        "event": "app:launched",
+        "match": {
+          "appId": "browser"
+        }
+      },
+      "messages": [
+        {
+          "text": "Tarayıcı geçmişini karıştırdığınızı görüyoruz.",
+          "delay": 900
+        },
+        {
+          "text": "Başkasının kişisel verilerini incelemek suçtur, biliyorsunuz değil mi?",
+          "delay": 1200
+        }
+      ],
+      "choices": [
+        {
+          "id": "accuse",
+          "text": "Kişisel veri mi? Müşterilerinizin verisini satan sizsiniz.",
+          "reply": [
+            {
+              "text": "Ne dediğinizi bilmiyorsunuz.",
+              "delay": 900
+            },
+            {
+              "text": "Ve bunu söylediğiniz için çok dikkatli olmanız gerekecek.",
+              "delay": 1200
+            }
+          ]
+        },
+        {
+          "id": "friend",
+          "text": "Sadece arkadaşımı arıyorum.",
+          "reply": [
+            {
+              "text": "Arkadaşınız şirketin gizli belgelerini çaldı. Bunu biliyor muydunuz?",
+              "delay": 1300
+            },
+            {
+              "text": "Ona yardım eden herkes aynı sorumluluğu taşır.",
+              "delay": 1100
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "a2-email-fail",
+      "act": 2,
+      "trigger": {
+        "event": "lock:failed",
+        "match": {
+          "lockId": "emailPassword"
+        }
+      },
+      "messages": [
+        {
+          "text": "E-posta hesabına giriş denemesi görüyoruz.",
+          "delay": 800
+        },
+        {
+          "text": "Birkaç yanlış denemeden sonra hesap kilitlenir. Bırakın bunu.",
+          "delay": 1100
+        }
+      ]
+    },
+    {
+      "id": "a2-email-pass",
+      "act": 2,
+      "trigger": {
+        "event": "lock:unlocked",
+        "match": {
+          "lockId": "emailPassword"
+        }
+      },
+      "messages": [
+        {
+          "text": "Parolayı nasıl bildiniz?",
+          "delay": 700
+        },
+        {
+          "text": "Güvenlik kartının bir fotoğrafını bize gönderin. Hesabı biz güvenceye alalım.",
+          "delay": 1300
+        }
+      ],
+      "choices": [
+        {
+          "id": "which-card",
+          "text": "Hangi kart?",
+          "reply": [
+            {
+              "text": "Zeynep Hanım'ın kartı. Onu size verdiğini biliyoruz.",
+              "delay": 1100
+            }
+          ]
+        },
+        {
+          "id": "never",
+          "text": "Asla.",
+          "reply": [
+            {
+              "text": "Bu kararınızı not ediyorum.",
+              "delay": 900
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "a2-mother",
+      "act": 2,
+      "trigger": {
+        "afterSeconds": 150
+      },
+      "skipIfUnlocked": "email",
+      "messages": [
+        {
+          "text": "Hâlâ bekliyoruz.",
+          "delay": 900
+        },
+        {
+          "text": "Bu arada Zeynep Hanım'ın annesiyle dün görüştük. Çok endişeli.",
+          "delay": 1300
+        },
+        {
+          "text": "Siz de ailenizi endişelendirmek istemezsiniz.",
+          "delay": 1200
+        }
+      ],
+      "choices": [
+        {
+          "id": "leave-family",
+          "text": "Ailesini rahat bırakın.",
+          "reply": [
+            {
+              "text": "Biz kimseyi rahatsız etmiyoruz. Sadece şirketin malını istiyoruz.",
+              "delay": 1100
+            }
+          ]
+        },
+        {
+          "id": "threat",
+          "text": "Bu bir tehdit mi?",
+          "reply": [
+            {
+              "text": "Hayır. Bu bir hatırlatma.",
+              "delay": 1000
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "a2-email-in",
+      "act": 2,
+      "trigger": {
+        "event": "lock:unlocked",
+        "match": {
+          "lockId": "email"
+        }
+      },
+      "messages": [
+        {
+          "text": "Hesaba girdiniz.",
+          "delay": 800
+        },
+        {
+          "text": "Kargo takip numarası TK-2609-4471. Göndericiyi bulmak zor değildi.",
+          "delay": 1300
+        },
+        {
+          "text": "Alıcıyı bulmak da zor olmayacak.",
+          "delay": 1200
+        }
+      ]
+    },
+    {
+      "id": "a2-forward",
+      "act": 2,
+      "trigger": {
+        "event": "email:opened",
+        "match": {
+          "emailId": "mavikule-fwd"
+        }
+      },
+      "messages": [
+        {
+          "text": "O iletiyi açtığınızı gördük.",
+          "delay": 900
+        },
+        {
+          "text": "Gördüğünüz şey bağlamından koparılmış bir yazışma. Kimse size inanmaz.",
+          "delay": 1300
+        }
+      ],
+      "choices": [
+        {
+          "id": "evidence",
+          "text": "O zaman neden bu kadar korkuyorsunuz?",
+          "reply": [
+            {
+              "text": "...",
+              "delay": 1500
+            },
+            {
+              "text": "Son kez söylüyorum: kodu yazın.",
+              "delay": 1000
+            }
+          ]
+        },
+        {
+          "id": "silent",
+          "text": "(Cevap verme)",
+          "silent": true,
+          "reply": [
+            {
+              "text": "Sessizliğiniz bir cevap sayılır.",
+              "delay": 1400
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "a2-final",
+      "act": 2,
+      "trigger": {
+        "manual": true
+      },
+      "messages": [
+        {
+          "text": "Yeterli.",
+          "delay": 700
+        },
+        {
+          "text": "Cihaz uzaktan kilitleniyor ve sıfırlanıyor. Bilgisayardan uzaklaşın.",
+          "delay": 1000
+        }
+      ]
+    },
+    {
+      "id": "a3-final",
+      "act": 3,
+      "trigger": {
+        "manual": true
+      },
+      "messages": [
+        {
+          "text": "Merhaba yeniden.",
+          "delay": 900
+        },
+        {
+          "text": "Zeynep Hanım'ın betiği güzeldi. Ama yedek yönetim profilimizi bulamamış.",
+          "delay": 1400
+        },
+        {
+          "text": "Bozcaada. Rüzgârgülü Pansiyon, 3 numaralı oda.",
+          "delay": 1500
+        },
+        {
+          "text": "Teşekkürler. Gerisini biz hallederiz.",
+          "delay": 1200
+        }
+      ]
+    },
+    {
+      "id": "a4-start",
+      "act": 4,
+      "trigger": {
+        "event": "act:started",
+        "match": {
+          "act": 4
+        }
+      },
+      "messages": [
+        {
+          "text": "Bir ekibimiz Bozcaada'ya doğru yola çıktı. Akşama oradalar.",
+          "delay": 1300
+        },
+        {
+          "text": "Zeynep Hanım'a bir şey olmasını istemeyiz, değil mi?",
+          "delay": 1200
+        }
+      ],
+      "choices": [
+        {
+          "id": "dont-touch",
+          "text": "Ona dokunmayın!",
+          "reply": [
+            {
+              "text": "Bu tamamen size bağlı.",
+              "delay": 900
+            }
+          ]
+        },
+        {
+          "id": "bluff",
+          "text": "Blöf yapıyorsunuz.",
+          "reply": [
+            {
+              "text": "Görürüz.",
+              "delay": 900
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "a4-offer",
+      "act": 4,
+      "trigger": {
+        "event": "terminal:mdmKilled"
+      },
+      "messages": [
+        {
+          "text": "Ekranı kapattınız. Akıllıca.",
+          "delay": 1000
+        },
+        {
+          "text": "O zaman açık konuşalım: kanıtları bize gönderin. Zeynep Hanım işine döner, hakkındaki şikâyeti geri çekeriz.",
+          "delay": 1600
+        },
+        {
+          "text": "Siz de bu zahmetiniz için... memnun kalırsınız. Adres: m.karatas@akcena.com.tr",
+          "delay": 1500
+        }
+      ],
+      "choices": [
+        {
+          "id": "how-much",
+          "text": "Ne kadar?",
+          "reply": [
+            {
+              "text": "Rakamı siz söyleyin. Sadece gönderin.",
+              "delay": 1000
+            }
+          ]
+        },
+        {
+          "id": "no",
+          "text": "Hayır.",
+          "reply": [
+            {
+              "text": "Pişman olacaksınız.",
+              "delay": 900
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "a4-merged",
+      "act": 4,
+      "trigger": {
+        "event": "evidence:merged"
+      },
+      "messages": [
+        {
+          "text": "Bir dosya oluşturduğunuzu biliyoruz.",
+          "delay": 1000
+        },
+        {
+          "text": "Son şansınız. Doğru adrese gönderin.",
+          "delay": 1100
+        }
+      ]
+    }
+  ],
+  "safeguard": {
+    "windowTitle": "zeynep_koruma",
+    "lines": [
+      "> giden mesaj taranıyor...",
+      "> uzak erişim kodu tespit edildi",
+      "> GÖNDERİM ENGELLENDİ",
+      "",
+      "Onlara kod verme. Sana güveniyorum, onlara değil. –Z"
+    ]
+  },
+  "act2Ending": {
+    "countdownLabel": "UZAKTAN SİLME",
+    "countdownFrom": 10,
+    "interruptAt": 4,
+    "disconnectedLabel": "BAĞLANTI KESİLDİ",
+    "systemLine": "— Bağlantı sonlandırıldı —",
+    "terminalTitle": "zeynep_koruma.sh",
+    "terminalLines": [
+      "$ ./zeynep_koruma.sh --acil",
+      "[!] uzaktan silme komutu alındı (kaynak: AKCENA-MDM)",
+      "[..] MDM profili kaldırılıyor",
+      "[OK] MDM profili kaldırıldı",
+      "[..] ağ arayüzleri kapatılıyor",
+      "[OK] cihaz çevrimdışı",
+      "",
+      "Biliyordum geleceklerini.",
+      "Artık bizi göremezler. Terminali aç, gerisi orada.",
+      "–Z"
+    ]
+  },
+  "act3Ending": {
+    "networkNotification": {
+      "title": "Ağ",
+      "text": "Bağlantı yeniden kuruldu: AKCENA-MDM-YEDEK",
+      "icon": "wifi"
+    },
+    "terminalLines": [
+      "",
+      "[!] uzak oturum algılandı: AKCENA-MDM-YEDEK",
+      "[!] ekran paylaşımı: AÇIK",
+      "[!!] zeynep_koruma.sh: yedek profil bulunamadı — engellenemiyor"
+    ]
+  }
+}
